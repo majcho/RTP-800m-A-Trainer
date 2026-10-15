@@ -1,131 +1,114 @@
 # RTP 800 m – Max Müller | Struktur der Gruppenpräsentation
 
-**DLV A-Trainer-Ausbildung · Disziplinblock Lauf/Gehen · Gruppenarbeit**
+**DLV-Akademie · Ausbildung Trainer-A · Disziplinblock Lauf/Gehen · Gruppenarbeit**
 Gruppe: Guido Sander, Oliver Majchrzak, Jan Petermann, Jan Seemann (angehende A-Trainer)
-Vortragszeit: 20 Min. = 4 × 5 Min. · Format: HTML-Präsentation (Umsetzung: Oliver)
-Planungszeitraum: KW 42/2026 (12.10.2026) – KW 39/2027 · Hauptwettkampf: U23-EM Bydgoszcz, 22.–25.07.2027
+Vortragszeit: 20 Min. = 4 × 5 Min. · Format: HTML-Präsentation (`index.html`, 33 Folien)
+Planungszeitraum: KW 42/2026 (12.10.2026) – KW 39/2027 · Hauptwettkampf: U23-EM Bydgoszcz (POL), 22.–25.07.2027
+Stand: 15.10.2026
 
-> **Legende:** ⚠ = Annahme / noch zu klären · 👤 = verantwortlich für Inhalt · 🎤 = Vortragende/r
-
----
-
-## Formale Anforderungen (aus Besprechung 09.10.2026)
-
-- Deckblatt anders gestaltet als Folgefolien
-- Navigationsmenü / Fortschrittsanzeige auf jeder Folie (Zuhörer wissen, wo man ist)
-- Oberthema auf jeder Folie sichtbar, Foliennummer
-- Gliederungsübersicht am Anfang
-- Quellenangaben (Folie + Quellenverzeichnis am Ende)
-- Abkürzungsverzeichnis (TP, DL, RT, WK, Vl3 …) – als Legende/Anhang
-- Design in DLV-Farben (Rot/Gold/Anthrazit), ca. 30 % der Bewertung auf Gestaltung, Aufbau, Rechtschreibung ⚠ Bewertungsanteil laut mündlicher Aussage
-- Grafiken statt Stichwortlisten (Leistungsspinne, Leistungsentwicklungskurve, Jahresbalken)
-- Ablauf: Rahmenbedingungen → Vertiefung mit 1–2 Beispielen → Ausklang
-- Realistische Planung: so, wie wir sie zu 90–95 % auch selbst umsetzen würden
+> **Legende:** ⚠ = Annahme / noch zu klären
 
 ---
 
-## Block 1 – Einführung & Rahmenbedingungen (ca. 5 Min.)
+## Geforderte Darstellungen (Prüfungsleistungen lt. Einführungs-PDF vom 03.09.2026)
 
-🎤 Oliver Majchrzak · 👤 Inhalte Umfeld: Guido Sander
+| Darstellung | Folie |
+|---|---|
+| Ausgangslage | Block 1 + Block 2 (Leistungsentwicklung, Profil) |
+| Langfristige Entwicklung | Block 2 |
+| MAZ (Makrozyklus) | Block 3 |
+| MEZ (Mesozyklen) | Block 3 |
+| MIZ aVP (allgemeine Vorbereitungsperiode) | Block 3 |
+| MIZ sVP (spezielle Vorbereitungsperiode) | Block 3 |
+| MIZ vWK (Vorbereitungswettkampf) | Block 4 ⚠ Deutung von „vWK“ |
+| MIZ hWK (Hauptwettkampf) | Block 4 |
 
-1. **Deckblatt** – Titel, Athlet, Gruppe, Datum, DLV-Logo
-2. **Wer sind wir?** – 4 angehende A-Trainer, Rollen im Team
-3. **Gliederung** – 4 Blöcke mit Vortragenden
-4. **Aufgabenstellung** – Athlet 20 J., 800 m, PB 1:45,90, Ziel U23-EM 2027
-5. **Athletenprofil Max Müller**
-   - Jg. 2006, 1,80 m, 66 kg, Ausdauertyp, letztes Jahr noch U20
-   - Lehramtsstudium LUH Hannover, WG; Finanzierung Familie + BAföG
-   - Kader: Landeskader NDS (LK-F) + Bundeskader ⚠ NK2 (Notizen) vs. NK1 (Transkript) – klären
-6. **Umfeld & Ressourcen** (Grafik: Netzwerk um den Athleten)
-   - Heimtrainer (angehender A-Trainer), Anschluss Laufteam Niedersachsen
-   - Kurze Wege: Laufstrecken, Stadion/Tartan, Kraftraum, Physio, MHH
-   - Trainingsmittel Heimtrainer: Laktatmessgerät Lactate Plus u. a.
-7. **Gesundheit & Rahmenpflichten**
-   - Gesund, Blutwerte regelmäßig, keine Verletzung, keine Allergien/Medikamente
-   - ADAMS-Meldepflicht inkl. Trainingslager-Aufenthalte
-8. **Monitoring & Datenfluss** (Grafik)
-   - COROS Pace 4 + HFM (Armband) → TrainingPeaks; IDA-Tagebuch (IAT, manuell)
-   - Grenzen offen benennen: Uhrdaten nur grob übertragbar, HRV am Handgelenk wenig belastbar
-   - Ausblick: Waage + Ernährungsprotokoll anbinden
+## Formale Anforderungen
+
+- Deckblatt anders als Folgefolien
+- Menü mit 4 Blöcken auf jeder Folie, Vortragender in der Fußzeile, Foliennummer
+- Gliederung am Anfang, Quellen- und Abkürzungsverzeichnis am Ende
+- DLV-Farben (Rot/Gold/Anthrazit), Grafiken statt Stichwortlisten
+- Realistische Planung (zu 90–95 % selbst umsetzbar)
 
 ---
 
-## Block 2 – Ausgangslage, Konkurrenz & Zielsetzung (ca. 5 Min.)
+## Block 1 – Einführung & Rahmenbedingungen (Oliver Majchrzak)
 
-🎤 + 👤 Jan Seemann
+1. Deckblatt
+2. Gliederung
+3. Kapiteltrenner
+4. **Wer sind wir? Aufgabe** – Aufgabenstellung DLV, geforderte Darstellungen, Teamaufteilung
+5. **Athletenprofil** – geb. 11.10.2006, 20 J., 1,80 m, 66 kg, BMI 20,4; PB 1:45,90
+   - Energiebedarf: Grundumsatz ca. 1.734 kcal, Gesamtumsatz 3.121–3.815 kcal (PAL 1,8–2,2)
+   - Kader: **Bundeskader PK** (Norm Jg. 2006: 1:47,00), **Landeskader NLV LK-Ü** (U23/Aktive), Laufteam Niedersachsen
+   - Leistungsstand 10/2026: ca. 70 km/Woche, Vl3 3:01 min/km
+6. **Voraussetzungen** – Training, soziale Strukturen, Gesundheit, Pflichten (ADAMS)
+7. **Umfeld & Ressourcen** – Netzwerkgrafik, Entfernungen WG/Uni/Stadion/OSP ⚠ Annahmen
+8. **Monitoring & Datenfluss** – COROS → TrainingPeaks → IDA, Grenzen der Datenübertragung
 
-1. **Leistungsentwicklung 15–20 J.** – Kurve 2:00,01 → 1:45,90; Vl3 3:35 → 2:56 min/km
-2. **Prognose & Normen** (Grafik Leistungsentwicklung)
-   - U23-EM-Norm 1:46,80 ⚠ Norm 2027 offiziell prüfen
-   - Zielkorridor 2027: 1:44,3 (Prognose) / 1:45,1 (konservativ) / 1:43,8 (optimistisch)
-   - Langfristziel < 1:44 (EM-/Olympia-Normbereich)
-3. **Konkurrenzanalyse** – Bestenliste D + EU U23 (Jg. 2005–2007), Rang von Max
-4. **Kadernormen** – NK1/NK2/PK-Kriterien, Ziel Kaderstatus 2028
-5. **Stärken-Schwächen-Profil (Leistungsspinne)**
-   - Achsen z. B.: Grundlagenausdauer, spezielle Ausdauer, Schnelligkeit, Kraft, Lauftechnik, Taktik, Regeneration/Ernährung, Psyche
-   - Hypothese: Schnelligkeit gut, spezielle Ausdauer + Ernährung ausbaufähig
-   - ⚠ Verantwortung noch N.N. – Vorschlag: Jan Seemann
-6. **Abgeleitete Trainingsschwerpunkte** (3–4 Kernziele für das Jahr)
+## Block 2 – Ausgangslage, Konkurrenz & Ziel (Jan Seemann)
 
----
+9. Kapiteltrenner
+10. **Ausgangslage: Leistungsentwicklung** – 2:00,01 (15 J.) → 1:45,90 (19 J.); Prognose 2027: 1:44,3 (Korridor 1:43,8–1:45,1)
+11. **Langfristige Entwicklung** – Plan 2027–2032, Vl3-Kurve 3:35 → 3:01 → Ziel 2:56 (2027) → 2:52
+12. **Konkurrenz Europa U23** – Jg. 2005–2007; Laros (NED) 1:43,60, Dudycha (CZE) 1:44,79; Referenz U23-EM 2025: Sieg 1:44,36, Platz 8 1:45,95, 3 Vorläufe + Finale
+13. **Kadernormen** – DLV 2026/2027, 800 m: NK1 Jg. 2006 1:48,00; PK Jg. 2006 1:47,00; PK Jg. 2005 1:46,00 / Dreierschnitt 1:46,50
+14. **Disziplinspezifische Voraussetzungen** – Leistungsspinne (Auswertung 14.10.2026, Skala 0–100)
+    - Anthropometrie 100, Psychologie 80, Schnelligkeit 80, Schnellkraft 80, aerobe Ausdauer Vl3 70, anaerobe Ausdauer 90, Technik 60, Wettkampfleistung 70
+    - Ziellinie 07/2027 als Vorschlag
+15. **Leistungsdiagnostik** – LD 1–4 (KW 42/43, 51, 12, 23); Ort Hannover oder IAT Leipzig ⚠
+16. **Ziele & Trainingsschwerpunkte 2027** – aerobe Ausdauer, Technik, Wettkampfleistung; Stärken erhalten
 
-## Block 3 – Makro- & Mesoplanung (ca. 5 Min.)
+## Block 3 – MAZ, MEZ & Mikrozyklen VP (Jan Petermann)
 
-🎤 + 👤 Jan Petermann
+17. Kapiteltrenner
+18. **Planungsprinzipien** – eindeutige Reize, Blöcke 4–6 Wochen, Doppelperiodisierung, 3:1
+19. **Makrozyklus (MAZ) 2026/27** – Jahresgrafik + Tabelle
 
-1. **Planungsprinzipien**
-   - Doppelperiodisierung (Halle + Sommer), Hauptziel Juli
-   - Eindeutige Reize: Blöcke von 4–6 Wochen mit einem Schwerpunkt (kein Mischen Schwelle/VO2max)
-   - Umfangsteigerung: aktuell ca. 70 km/Wo. → Ziel ca. 90 km/Wo. ⚠ Grafik nennt 78 km als Ausgang – abgleichen
-2. **Makrozyklus 2026/27** (Jahresbalken-Grafik)
+| Periode | Zeitraum | KW | Schwerpunkt | km/Wo. |
+|---|---|---|---|---|
+| VP I | 12.10.–20.12.2026 | 42–51 | Aerobe Basis, Schwelle, Kraft, Technik | 72 → 88 |
+| VP II | 21.12.2026–17.01.2027 | 52–2 | VO2max, spezielle Vorbereitung Halle, 2 TL | 85–90 |
+| WP I | 18.01.–07.03.2027 | 3–9 | Hallensaison (LM, NDM, DM; EM Halle nur bei Norm) | 65–75 |
+| VP III | 08.03.–09.05.2027 | 10–18 | 2 Wo. Übergang, spezielle Ausdauer, TL Ostern | 45 → 90 |
+| WP II | 10.05.–01.08.2027 | 19–30 | Sommersaison, Höhepunkt U23-EM KW 29 | 65–75 |
+| ÜP | ab 02.08.2027 | 31–39 | Option Universiade, Analyse, Regeneration | 30–40 |
 
-| Periode | Zeitraum | KW | Schwerpunkt |
-|---|---|---|---|
-| VP I – allgemein | 12.10.–20.12.2026 | 42–51 | Grundlagenausdauer, Umfang, Kraft, Technik |
-| VP II – speziell (Hallenvorbereitung) | 21.12.2026–17.01.2027 | 52–2 | TL Weihnachten/Neujahr, TL Portugal (Jan.) ⚠ Ort/Termin |
-| WP I – Halle | 18.01.–07.03.2027 | 3–9 | LM Halle 22.–24.01., NDM Halle 06./07.02., DM Halle 19.–21.02., (EM Halle 04.–07.03. nur bei Norm) |
-| ÜP I | 08.–21.03.2027 | 10–11 | Regeneration, aktive Erholung |
-| VP III – Sommervorbereitung | 22.03.–09.05.2027 | 12–18 | TL Ostern ⚠ Ort, spezielle Ausdauer, Tempohärte |
-| WP II – Sommer | 10.05.–01.08.2027 | 19–30 | s. Wettkampfkalender unten |
-| ÜP II | ab 02.08.2027 | 31– | Saisonanalyse, Regeneration (Option Universiade 06.–11.08.) |
+20. **Wettkampfkalender 2027** – Halle und Sommer (NLV/BLV-Terminplan, Stand 12.10.2026)
+21. **Mesozyklen (MEZ) VP I & VP II** – Wochenumfänge KW 42–2, Meso 1–4
+22. **MIZ aVP** – Beispiel KW 47, Kernreiz Schwelle, ca. 84 km
+23. **MIZ sVP** – Beispiel KW 17, Kernreiz spezielle Ausdauer, ca. 76 km
 
-3. **Wettkampfkalender Sommer 2027** (Auswahl, Quelle NLV/BLV-Terminplan Stand 12.10.2026)
-   - Einstieg: Pfingstsportfest Zeven 15./16.05., Goldenes Oval Dresden 30.05.
-   - NDM Männer/Frauen Cottbus 19./20.06., Junioren-Gala Mannheim ⚠ Datum o. T.
-   - DM U23 09.–11.07. → **EM U23 Bydgoszcz 22.–25.07.** → DM Männer 30.07.–01.08.
-   - Option FISU Universiade (LA 06.–11.08.) – Max ist Student
-4. **Mesozyklus-Beispiel** – ein Block aus VP I (4 Wochen, 3:1 Belastung/Entlastung): Umfang, Intensitätsverteilung, Kernreiz je Woche
-5. **Leistungsdiagnostik**
-   - Termine: Eingang (KW 42/43), vor Halle, vor Sommer, vor EM
-   - Inhalte: Stufentest Laktat (Vl3/VO2max-Bezug), 1:2-Test, Kraftdiagnostik
-   - ⚠ Ort offen: Hannover vor Ort (Lactate Plus) vs. IAT Leipzig
+## Block 4 – Mikrozyklen WK, Ernährung & Fazit (Guido Sander)
 
----
-
-## Block 4 – Mikroplanung, Ernährung & Fazit (ca. 5 Min.)
-
-🎤 Guido Sander · 👤 Mikro-Pläne: Jan Petermann, Ernährung: Guido Sander
-
-1. **Mikrozyklus 1 – Trainingswoche VP I** (Tabelle Mo–So, Einheiten, Umfang, Intensität, Abkürzungen)
-2. **Mikrozyklus 2 – Unmittelbare Wettkampfvorbereitung U23-EM** (KW 29, Tapering, Rennsimulation)
-3. **Ernährung & Gewichtsmanagement**
-   - Ist: Fastfood-lastig → Ziel: leistungsorientierte, regenerationsfördernde Ernährung
-   - Maßnahmen: Ernährungsberatung, Protokoll über TrainingPeaks
-4. **Fuelling & Wettkampfversorgung** – Trainingstag, Wettkampftag, Vor-/Zwischenläufe/Finale
-5. **Risiken & Steuerung** – Belastung Studium/Prüfungsphasen, Infekte, Datenqualität, Anti-Doping
-6. **Fazit & Ausblick** – Ziel 2027, Perspektive bis 2028+
-7. **Quellenverzeichnis**
-8. **Abkürzungsverzeichnis**
+24. Kapiteltrenner
+25. **MIZ vWK** – Beispiel KW 24, NDM Cottbus als Formtest, ca. 50 km
+26. **MIZ hWK** – KW 29, U23-EM Bydgoszcz, Tapering; Modus 2025: Vorläufe + Finale
+27. **Ernährung & Gewichtsmanagement** – Energiebedarf 3.121–3.815 kcal, Beratung, Kontrolle
+28. **Fuelling & Wettkampfversorgung**
+29. **Risiken & Steuerung**
+30. **Fazit & Ausblick**
+31. Abkürzungsverzeichnis
+32. Quellenverzeichnis
+33. Schlussfolie
 
 ---
 
-## Offene Punkte vor dem Bau der HTML-Präsentation
+## Offene Punkte
 
-- [ ] Kaderstatus NK1 oder NK2? (Jan Seemann, NLV-/DLV-Seite)
-- [ ] U23-EM-Norm 2027 offiziell bestätigen (Jan Seemann)
+- [ ] Konkurrenz Europa U23: Athleten Jg. 2005–07 zwischen 1:45,13 und 1:45,90 über European Rankings ergänzen (Jan Seemann)
+- [ ] Kadernormen 2027/28 prüfen (Kadererhalt 2028: voraussichtlich 1:46,00 bzw. Dreierschnitt 1:46,50) (Jan Seemann)
+- [ ] U23-EM-Norm 2027: DLV-Nominierungsrichtlinien 2027 noch nicht veröffentlicht (Jan Seemann)
 - [ ] Ausgangsumfang 70 km oder 78 km/Woche einheitlich festlegen (Jan Petermann)
+- [ ] Mesozyklen und Mikrozyklen fachlich freigeben (Jan Petermann)
+- [ ] Deutung „MIZ vWK“ bestätigen (Vorbereitungswettkampf vs. Woche vor dem Wettkampf)
 - [ ] Trainingslager: Orte und Termine Weihnachten/Neujahr, Portugal (Jan.), Ostern
-- [ ] Leistungsdiagnostik Hannover oder Leipzig
-- [ ] Stärken-Schwächen-Profil: Verantwortung festlegen (N.N.)
-- [ ] Abgabetermin der Präsentation ⚠ im Transkript ca. „3 Wochen“ erwähnt → ca. Anfang Nov. 2026 bestätigen
-- [ ] Bildmaterial/Grafiken an Oliver: Leistungsentwicklungskurve, Pläne als Tabellen
+- [ ] Leistungsdiagnostik: Hannover oder IAT Leipzig
+- [ ] Entfernungen WG/Uni/Stadion/OSP und Größe Trainingsgruppe bestätigen
+- [ ] Abkürzung „SPA“ ausschreiben
+- [ ] Ernährung: Mengenangaben nach Ernährungsberatung (Guido Sander)
+- [ ] Grundumsatz: verwendete Formel als Quelle angeben
+- [ ] U23-EM-Norm bei 22 Jahren (2029) aus der Leistungsentwicklungsgrafik entfernen – Jg. 2006 ist 2029 nicht mehr U23
+- [ ] Prüfungsphasen LUH für Entlastungswochen eintragen
+- [ ] Fachliteratur im Quellenverzeichnis ergänzen
