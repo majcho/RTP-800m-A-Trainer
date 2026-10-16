@@ -272,13 +272,14 @@ svg text{font-family:"Barlow",sans-serif}
 <section class="slide" data-block="2" data-redner="Jan Seemann">
   <div class="inhalt">
     <h2>Ausgangslage: <span class="akz">Leistungsentwicklung</span></h2>
-    <div class="unter">800-m-Zeiten nach Alter, Prognose und Qualifikationsnormen</div>
-    <div style="display:grid;grid-template-columns:1.6fr 1fr;gap:22px;flex:1;min-height:0">
-      <svg id="chartLeistung" viewBox="0 0 760 470" width="100%" height="100%"></svg>
+    <div class="unter">800-m-Tempo und Vl3 nach Alter · Ist, Prognose mit Korridor, Qualifikationsnormen</div>
+    <div style="display:grid;grid-template-columns:2.35fr 1fr;gap:18px;flex:1;min-height:0">
+      <svg id="chartLeistung" viewBox="0 0 860 500" width="100%" height="100%"></svg>
       <div>
-        <div class="kpi" style="margin-bottom:12px"><div class="w">1:44,3</div><div class="l">Prognose Saison 2027 (Zielkorridor 1:43,8 – 1:45,1)</div></div>
-        <div class="karte gold" style="margin-bottom:12px"><h3>U23-EM-Norm</h3><p>1:46,80 – PB liegt bereits darunter <span class="warn">⚠ Norm 2027 offiziell prüfen</span></p></div>
-        <div class="karte"><h3>Ausdauerbasis</h3><p>Vl3 von 3:35 (15 J.) auf 3:01 min/km verbessert; Ziel 2027: 2:56 durch Umfangsteigerung 78 → 90 km/Woche (+15 %)</p></div>
+        <div class="kpi" style="margin-bottom:10px;padding:12px"><div class="w" style="font-size:34px">1:44,3</div><div class="l">Prognose 2027 · Korridor 1:43,8 – 1:45,1</div></div>
+        <div class="karte" style="margin-bottom:10px;padding:12px 14px"><h3 style="font-size:17px">Langfristig</h3><p style="font-size:14px">1:43,5 (21) · 1:42,6 (23) · Plateau 1:42,5 · Korridor 1:42 – 1:44</p></div>
+        <div class="karte gold" style="margin-bottom:10px;padding:12px 14px"><h3 style="font-size:17px">Quali-Normen</h3><p style="font-size:14px">U23-EM 1:46,80 · EM 1:44,80 · Olympia 1:44,70 · WM 1:43,00 <span class="warn">⚠ U23-EM mit 22 J. nicht startberechtigt</span></p></div>
+        <div class="karte dunkel" style="padding:12px 14px"><h3 style="font-size:17px">Vl3</h3><p style="font-size:14px">3:35 → 3:01 min/km; Ziel 2:56 durch Umfang 78 → 90 km/Wo. (+15 %, Überdistanztyp), langfristig 2:52</p></div>
       </div>
     </div>
     <div class="hinweis">Quelle: Leistungsentwicklungsgrafik Heimtrainer (Stand 10/2026). Altersachse wie in der Originalgrafik.</div>
@@ -796,33 +797,63 @@ function el(p,tag,a,txt){const e=document.createElementNS(NS,tag);for(const k in
 const C={rot:'#E2001A',gold:'#F2B300',anth:'#3A3540',grau:'#6B6672',linie:'#DDD8E0'};
 const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');return m+':'+(r.length<5?'0'+r:r);};
 
-/* Leistungsentwicklung */
+/* Leistungsentwicklung: zwei Panels, gemeinsame Altersachse */
 (function(){
   const svg=document.getElementById('chartLeistung');
-  const W=760,H=470,L=70,R=20,T=20,B=50;
-  const x=a=>L+(a-15)/(29-15)*(W-L-R);
-  const y=s=>T+(s-102)/(121-102)*(H-T-B);
-  for(let s=102;s<=120;s+=2){el(svg,'line',{x1:L,x2:W-R,y1:y(s),y2:y(s),stroke:C.linie});el(svg,'text',{x:L-8,y:y(s)+4,'text-anchor':'end','font-size':12,fill:C.grau},fmt(s).replace(',00',''));}
-  for(let a=15;a<=29;a+=2){el(svg,'text',{x:x(a),y:H-B+20,'text-anchor':'middle','font-size':12,fill:C.grau},a);}
-  el(svg,'text',{x:W-R,y:H-8,'text-anchor':'end','font-size':13,fill:C.grau},'Alter');
-  el(svg,'text',{x:L,y:12,'font-size':13,fill:C.grau},'800 m');
+  const L=58,R=800,ax=a=>L+(a-15)/(30-15)*(R-L);
+  const v=t=>800/t, f=t=>{const m=Math.floor(t/60),r=t-m*60;return m+':'+(r<10?'0':'')+r.toFixed(r%1?1:0).replace('.',',');};
+  const fv=sec=>{const m=Math.floor(sec/60);return m+':'+String(Math.round(sec%60)).padStart(2,'0');};
+  const smooth=pts=>{let d='M'+pts[0].join(' ');for(let i=0;i<pts.length-1;i++){const p0=pts[i-1]||pts[i],p1=pts[i],p2=pts[i+1],p3=pts[i+2]||p2;
+    d+=` C${p1[0]+(p2[0]-p0[0])/6} ${p1[1]+(p2[1]-p0[1])/6},${p2[0]-(p3[0]-p1[0])/6} ${p2[1]-(p3[1]-p1[1])/6},${p2[0]} ${p2[1]}`;}return d;};
+  /* ---- Panel 1: 800 m ---- */
+  const T=18,B=318, vy=x=>B-(x-6.6)/(7.9-6.6)*(B-T);
+  [[120,'2:00'],[115,'1:55'],[110,'1:50'],[106,'1:46'],[104,'1:44'],[102,'1:42']].forEach(([t,l])=>{el(svg,'line',{x1:L,x2:R,y1:vy(v(t)),y2:vy(v(t)),stroke:C.linie});el(svg,'text',{x:L-8,y:vy(v(t))+4,'text-anchor':'end','font-size':11,fill:C.grau},l);});
+  el(svg,'text',{x:L-50,y:12,'font-size':12,'font-weight':600,fill:'#1F1C23'},'800 m (schneller = oben)');
+  const P=(a,x)=>[ax(a),vy(x)];
+  // Korridor-Kurven
+  el(svg,'path',{d:smooth([[19,7.56],[20,7.69],[21,7.76],[22,7.81],[23,7.835],[24,7.85],[25,7.855],[26.5,7.85],[27.5,7.855],[29,7.85]].map(p=>P(...p))),fill:'none',stroke:C.gold,'stroke-width':2});
+  el(svg,'path',{d:smooth([[18.6,7.51],[19,7.53],[20,7.60],[21,7.64],[22,7.665],[23,7.675],[25,7.683],[29.3,7.69]].map(p=>P(...p))),fill:'none',stroke:C.rot,'stroke-width':2,'stroke-dasharray':'6 4'});
+  el(svg,'text',{x:ax(29.25),y:vy(7.85)-6,'font-size':12,'font-weight':700,fill:'#9a6f00','font-style':'italic'},'1:42');
+  el(svg,'text',{x:ax(29.4),y:vy(7.69)+4,'font-size':12,'font-weight':700,fill:C.rot,'font-style':'italic'},'1:44');
+  // Hauptkurve
+  el(svg,'path',{d:smooth([[15,6.65],[16,6.97],[17,7.24],[18,7.43],[19,7.555],[20,7.665],[21,7.735],[22,7.775],[23,7.80],[24,7.81],[26,7.815],[28,7.825],[29.5,7.82]].map(p=>P(...p))),fill:'none',stroke:C.anth,'stroke-width':2.5});
+  el(svg,'text',{x:ax(29.4),y:vy(7.82)+18,'font-size':12,'font-weight':700,fill:C.anth,'font-style':'italic'},'1:42,5');
   // Normen
-  [[106.8,'U23-EM-Norm 1:46,80',C.gold],[104.8,'EM-Norm 1:44,80',C.grau]].forEach(([s,t,c])=>{
-    el(svg,'line',{x1:L,x2:W-R,y1:y(s),y2:y(s),stroke:c,'stroke-dasharray':'6 5','stroke-width':2});
-    el(svg,'text',{x:W-R-4,y:y(s)-6,'text-anchor':'end','font-size':12,fill:c,'font-weight':600},t);
-  });
-  const ist=[[15,120.01],[16,115.61],[17,111.95],[18,106.67],[19,105.90]];
-  el(svg,'polyline',{points:ist.map(p=>x(p[0])+','+y(p[1])).join(' '),fill:'none',stroke:C.anth,'stroke-width':3});
-  const prog=[[19,105.9],[20,104.3],[21,103.5],[23,102.6],[28,102.5]];
-  el(svg,'polyline',{points:prog.map(p=>x(p[0])+','+y(p[1])).join(' '),fill:'none',stroke:C.rot,'stroke-width':3,'stroke-dasharray':'8 6'});
-  const off=[[10,4,'start'],[10,4,'start'],[10,4,'start'],[-10,4,'end'],[0,24,'middle']];
-  ist.forEach(([a,s],i)=>{el(svg,'circle',{cx:x(a),cy:y(s),r:6,fill:C.anth});el(svg,'text',{x:x(a)+off[i][0],y:y(s)+off[i][1],'font-size':13,'font-weight':600,fill:'#1F1C23','text-anchor':off[i][2]},fmt(s));});
-  el(svg,'circle',{cx:x(20),cy:y(104.3),r:8,fill:C.rot});
-  el(svg,'text',{x:x(20)+12,y:y(104.3)+30,'font-size':14,'font-weight':700,fill:C.rot},'1:44,3 (2027)');
-  el(svg,'line',{x1:x(20),x2:x(20),y1:y(103.8),y2:y(105.1),stroke:C.rot,'stroke-width':2});
-  // Legende
-  el(svg,'line',{x1:L+10,x2:L+40,y1:T+16,y2:T+16,stroke:C.anth,'stroke-width':3});el(svg,'text',{x:L+46,y:T+20,'font-size':12},'Ist');
-  el(svg,'line',{x1:L+80,x2:L+110,y1:T+16,y2:T+16,stroke:C.rot,'stroke-width':3,'stroke-dasharray':'8 6'});el(svg,'text',{x:L+116,y:T+20,'font-size':12},'Prognose');
+  const N=[[20,106.8,'U23-EM','1:46,80'],[22,106.8,'U23-EM ⚠','1:46,80'],[23.2,104.8,'EM','1:44,80'],[25,104.7,'Olympia','1:44,70'],[27,104.8,'EM','1:44,80'],[24,103.0,'WM 1:43,00','',1],[26,103.0,'WM','',1],[28,103.0,'WM','',1]];
+  N.forEach(([a,t,n,z,side])=>{const [px,py]=P(a,v(t));el(svg,'rect',{x:px-5,y:py-5,width:10,height:10,fill:C.gold,stroke:'#fff','stroke-width':1.5,transform:`rotate(45 ${px} ${py})`});
+    if(side){el(svg,'text',{x:px+9,y:py+4,'font-size':11,'font-weight':700,fill:'#9a6f00'},n);return;}
+    el(svg,'text',{x:px,y:py+20,'text-anchor':'middle','font-size':11,'font-weight':600,fill:'#9a6f00'},n);el(svg,'text',{x:px,y:py+33,'text-anchor':'middle','font-size':11,fill:'#9a6f00'},z);});
+  // Ist-Punkte
+  [[15,120.01,'2:00,01',10,14],[16,115.61,'1:55,61',8,14],[17,111.95,'1:51,95',8,16],[18,106.67,'1:46,67',-8,-6,'end'],[19,105.90,'1:45,90',-6,-10,'end']].forEach(([a,t,l,dx,dy,an])=>{const [px,py]=P(a,v(t));
+    el(svg,'circle',{cx:px,cy:py,r:5.5,fill:C.anth,stroke:'#fff','stroke-width':1.5});el(svg,'text',{x:px+dx,y:py+dy,'text-anchor':an||'start','font-size':12,'font-weight':700,fill:'#1F1C23'},l);});
+  // Prognose-Punkte
+  [[20.1,104.3,'1:44,3',10,4],[21.2,103.5,'1:43,5',4,16],[23.2,102.6,'1:42,6',-4,-10],[24,102.5],[25,102.4],[26,102.43],[27,102.43],[28,102.36]].forEach(([a,t,l,dx,dy])=>{const [px,py]=P(a,v(t));
+    el(svg,'circle',{cx:px,cy:py,r:4.5,fill:'#fff',stroke:C.anth,'stroke-width':2});if(l)el(svg,'text',{x:px+dx,y:py+dy,'font-size':12,'font-weight':700,'font-style':'italic',fill:C.anth},l);});
+  [[20.1,103.8,'1:43,8',-8,-6],[20.1,105.1,'1:45,1',8,14]].forEach(([a,t,l,dx,dy])=>{const [px,py]=P(a,v(t));el(svg,'circle',{cx:px,cy:py,r:5,fill:C.rot});
+    el(svg,'text',{x:px+dx,y:py+dy,'text-anchor':dx<0?'end':'start','font-size':12,'font-weight':700,'font-style':'italic',fill:C.rot},l);});
+  /* ---- Panel 2: Vl3 ---- */
+  const T2=350,B2=462, wy=x=>B2-(x-4.5)/(6.0-4.5)*(B2-T2);
+  [[3.5*60,'3:30'],[3.25*60,'3:15'],[3*60,'3:00'],[2.833*60,'2:50']].forEach(([sec,l])=>{const m=1000/sec;el(svg,'line',{x1:L,x2:R,y1:wy(m),y2:wy(m),stroke:C.linie});el(svg,'text',{x:L-8,y:wy(m)+4,'text-anchor':'end','font-size':11,fill:C.grau},l);});
+  el(svg,'text',{x:L-50,y:T2-10,'font-size':12,'font-weight':600,fill:'#1F1C23'},'Vl3 (min/km, schneller = oben)');
+  const vl=[[15,215],[16,204],[17,192.3],[18,183],[19,181],[20,176],[24,172]];
+  const Q=([a,sec])=>[ax(a),wy(1000/sec)];
+  el(svg,'polyline',{points:vl.slice(0,6).map(p=>Q(p).join(',')).join(' '),fill:'none',stroke:'#8c8692','stroke-width':2.5});
+  el(svg,'polyline',{points:vl.slice(5).map(p=>Q(p).join(',')).join(' '),fill:'none',stroke:'#8c8692','stroke-width':2.5,'stroke-dasharray':'6 4'});
+  vl.forEach(([a,sec],i)=>{const [px,py]=Q([a,sec]);const prog=a>=20;el(svg,'circle',{cx:px,cy:py,r:4.5,fill:prog?'#fff':'#8c8692',stroke:'#8c8692','stroke-width':2});
+    if(a!==17)el(svg,'text',{x:px+(a===15?8:0),y:py-9,'text-anchor':a===15?'start':'middle','font-size':12,'font-weight':600,'font-style':prog?'italic':'normal',fill:'#4a4452'},fv(sec));});
+  // Annotation Umfangsteigerung
+  const [c1x,c1y]=Q([19.5,178.5]);
+  el(svg,'ellipse',{cx:c1x,cy:c1y,rx:44,ry:26,fill:'none',stroke:C.rot,'stroke-width':2});
+  el(svg,'line',{x1:c1x+46,y1:c1y+6,x2:ax(21.3),y2:c1y+22,stroke:C.rot,'stroke-width':1.5});
+  el(svg,'text',{x:ax(21.4),y:c1y+16,'font-size':12,'font-weight':700,fill:C.rot},'Umfangsteigerung 78 → 90 km/Wo. (ca. +15 %)');
+  el(svg,'text',{x:ax(21.4),y:c1y+31,'font-size':12,fill:C.rot},'Überdistanztyp');
+  /* ---- Altersachse ---- */
+  for(let a=15;a<=30;a++){el(svg,'text',{x:ax(a),y:B2+18,'text-anchor':'middle','font-size':11,fill:C.grau},a);}
+  el(svg,'text',{x:R,y:B2+34,'text-anchor':'end','font-size':12,fill:C.grau},'Alter');
+  /* ---- Legende ---- */
+  const lg=[['line',C.anth,'','800 m Ist / Prognose'],['line',C.gold,'','optimistisch'],['line',C.rot,'6 4','konservativ'],['dia',C.gold,'','Quali-Normen'],['line','#8c8692','','Vl3']];
+  let lx=L;lg.forEach(([k,c,da,t])=>{if(k==='line')el(svg,'line',{x1:lx,x2:lx+22,y1:494,y2:494,stroke:c,'stroke-width':2.5,'stroke-dasharray':da});else el(svg,'rect',{x:lx+6,y:489,width:9,height:9,fill:c,transform:`rotate(45 ${lx+10.5} 493.5)`});
+    el(svg,'text',{x:lx+28,y:498,'font-size':12,fill:'#1F1C23'},t);lx+=28+t.length*6.6+18;});
 })();
 
 /* Leistungsspinne: Disziplinspezifische Voraussetzungen, Skala 0-100 */
