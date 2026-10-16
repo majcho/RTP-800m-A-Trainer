@@ -2,9 +2,9 @@
 
 **DLV-Akademie · Ausbildung Trainer-A · Disziplinblock Lauf/Gehen · Gruppenarbeit**
 Gruppe: Guido Sander, Oliver Majchrzak, Jan Petermann, Jan Seemann (angehende A-Trainer)
-Vortragszeit: 20 Min. = 4 × 5 Min. · Format: HTML-Präsentation (`index.html`, 33 Folien)
-Planungszeitraum: KW 42/2026 (12.10.2026) – KW 39/2027 · Hauptwettkampf: U23-EM Bydgoszcz (POL), 22.–25.07.2027
-Stand: 15.10.2026
+Vortragszeit: 20 Min. = 4 × 5 Min. · Format: HTML-Präsentation (`index.html`, 34 Folien)
+Planungszeitraum: KW 42/2026 (12.10.2026) – KW 39/2027 · Hauptwettkampf: U23-EM Bydgoszcz (POL), 22.–25.07.2027 · zweiter Höhepunkt: FISU World University Games, Chungju (KOR), LA 07.–12.08.2027
+Stand: 16.10.2026
 
 > **Legende:** ⚠ = Annahme / noch zu klären
 
@@ -52,19 +52,25 @@ Stand: 15.10.2026
 9. Kapiteltrenner
 10. **Ausgangslage: Leistungsentwicklung** – 2:00,01 (15 J.) → 1:45,90 (19 J.); Prognose 2027: 1:44,3 (Korridor 1:43,8–1:45,1)
 11. **Langfristige Entwicklung** – Plan 2027–2032, Vl3-Kurve 3:35 → 3:01 → Ziel 2:56 (2027) → 2:52
-12. **Konkurrenz Europa U23** – Jg. 2005–2007; Laros (NED) 1:43,60, Dudycha (CZE) 1:44,79; Referenz U23-EM 2025: Sieg 1:44,36, Platz 8 1:45,95, 3 Vorläufe + Finale
+12. **Konkurrenz U23 Europa & Deutschland** – Bestenlisten 2026, startberechtigt 2027: Jg. 2005–2007
+    - Europa (European Athletics, Top 20): Laros 1:43,60, Dudycha 1:44,79, Jonas 1:45,26, Phillips 1:45,61, Souadi 1:45,79, Cavagnoux 1:45,90 → Max Rang 6 (zeitgleich)
+    - Deutschland (DLV): Stöber 1:46,05, Buschbeck 1:46,33 → Max Nr. 1 der Jg. 2005–07
+    - Referenz U23-EM 2025: Sieg 1:44,36, Platz 8 1:45,95, 3 Vorläufe + Finale
 13. **Kadernormen** – DLV 2026/2027, 800 m: NK1 Jg. 2006 1:48,00; PK Jg. 2006 1:47,00; PK Jg. 2005 1:46,00 / Dreierschnitt 1:46,50
-14. **Disziplinspezifische Voraussetzungen** – Leistungsspinne (Auswertung 14.10.2026, Skala 0–100)
+14. **Saisonhöhepunkte 2027: U23-EM & FISU** – DM U23 → U23-EM → FISU, DM Männer entfällt
+    - Nominierung FISU (Analogie 2025): adh-Interessensbekundung ca. Okt.–Nov. 2026, Bewerbung Feb.–März 2027, DHM-Teilnahme Pflicht, Nominierungsschluss ca. Anfang Juni
+    - adh-Norm 800 m 2025: A 1:46,30 / B 1:47,80
+15. **Disziplinspezifische Voraussetzungen** – Leistungsspinne (Auswertung 14.10.2026, Skala 0–100)
     - Anthropometrie 100, Psychologie 80, Schnelligkeit 80, Schnellkraft 80, aerobe Ausdauer Vl3 70, anaerobe Ausdauer 90, Technik 60, Wettkampfleistung 70
     - Ziellinie 07/2027 als Vorschlag
-15. **Leistungsdiagnostik** – LD 1–4 (KW 42/43, 51, 12, 23); Ort Hannover oder IAT Leipzig ⚠
-16. **Ziele & Trainingsschwerpunkte 2027** – aerobe Ausdauer, Technik, Wettkampfleistung; Stärken erhalten
+16. **Leistungsdiagnostik** – LD 1–4 (KW 42/43, 51, 12, 23); Ort Hannover oder IAT Leipzig ⚠
+17. **Ziele & Trainingsschwerpunkte 2027** – aerobe Ausdauer, Technik, Wettkampfleistung; Stärken erhalten
 
 ## Block 3 – MAZ, MEZ & Mikrozyklen VP (Jan Petermann)
 
-17. Kapiteltrenner
-18. **Planungsprinzipien** – eindeutige Reize, Blöcke 4–6 Wochen, Doppelperiodisierung, 3:1
-19. **Makrozyklus (MAZ) 2026/27** – Jahresgrafik + Tabelle
+18. Kapiteltrenner
+19. **Planungsprinzipien** – eindeutige Reize, Blöcke 4–6 Wochen, Doppelperiodisierung, 3:1
+20. **Makrozyklus (MAZ) 2026/27** – Jahresgrafik + Tabelle
 
 | Periode | Zeitraum | KW | Schwerpunkt | km/Wo. |
 |---|---|---|---|---|
@@ -72,26 +78,26 @@ Stand: 15.10.2026
 | VP II | 21.12.2026–17.01.2027 | 52–2 | VO2max, spezielle Vorbereitung Halle, 2 TL | 85–90 |
 | WP I | 18.01.–07.03.2027 | 3–9 | Hallensaison (LM, NDM, DM; EM Halle nur bei Norm) | 65–75 |
 | VP III | 08.03.–09.05.2027 | 10–18 | 2 Wo. Übergang, spezielle Ausdauer, TL Ostern | 45 → 90 |
-| WP II | 10.05.–01.08.2027 | 19–30 | Sommersaison, Höhepunkt U23-EM KW 29 | 65–75 |
-| ÜP | ab 02.08.2027 | 31–39 | Option Universiade, Analyse, Regeneration | 30–40 |
+| WP II | 10.05.–15.08.2027 | 19–32 | DM U23, U23-EM (KW 29), FISU (KW 31/32) | 55–75 |
+| ÜP | ab 16.08.2027 | 33–39 | Analyse, Regeneration | 30–40 |
 
-20. **Wettkampfkalender 2027** – Halle und Sommer (NLV/BLV-Terminplan, Stand 12.10.2026)
-21. **Mesozyklen (MEZ) VP I & VP II** – Wochenumfänge KW 42–2, Meso 1–4
-22. **MIZ aVP** – Beispiel KW 47, Kernreiz Schwelle, ca. 84 km
-23. **MIZ sVP** – Beispiel KW 17, Kernreiz spezielle Ausdauer, ca. 76 km
+21. **Wettkampfkalender 2027** – Halle und Sommer (NLV/BLV-Terminplan, Stand 12.10.2026)
+22. **Mesozyklen (MEZ) VP I & VP II** – Wochenumfänge KW 42–2, Meso 1–4
+23. **MIZ aVP** – Beispiel KW 47, Kernreiz Schwelle, ca. 84 km
+24. **MIZ sVP** – Beispiel KW 17, Kernreiz spezielle Ausdauer, ca. 76 km
 
 ## Block 4 – Mikrozyklen WK, Ernährung & Fazit (Guido Sander)
 
-24. Kapiteltrenner
-25. **MIZ vWK** – Beispiel KW 24, NDM Cottbus als Formtest, ca. 50 km
-26. **MIZ hWK** – KW 29, U23-EM Bydgoszcz, Tapering; Modus 2025: Vorläufe + Finale
-27. **Ernährung & Gewichtsmanagement** – Energiebedarf 3.121–3.815 kcal, Beratung, Kontrolle
-28. **Fuelling & Wettkampfversorgung**
-29. **Risiken & Steuerung**
-30. **Fazit & Ausblick**
-31. Abkürzungsverzeichnis
-32. Quellenverzeichnis
-33. Schlussfolie
+25. Kapiteltrenner
+26. **MIZ vWK** – Beispiel KW 24, NDM Cottbus als Formtest, ca. 50 km
+27. **MIZ hWK** – KW 29, U23-EM Bydgoszcz, Tapering; Modus 2025: Vorläufe + Finale
+28. **Ernährung & Gewichtsmanagement** – Energiebedarf 3.121–3.815 kcal, Beratung, Kontrolle
+29. **Fuelling & Wettkampfversorgung**
+30. **Risiken & Steuerung**
+31. **Fazit & Ausblick**
+32. Abkürzungsverzeichnis
+33. Quellenverzeichnis
+34. Schlussfolie
 
 ---
 
@@ -99,7 +105,9 @@ Stand: 15.10.2026
 
 - [ ] Konkurrenz Europa U23: Athleten Jg. 2005–07 zwischen 1:45,13 und 1:45,90 über European Rankings ergänzen (Jan Seemann)
 - [ ] Kadernormen 2027/28 prüfen (Kadererhalt 2028: voraussichtlich 1:46,00 bzw. Dreierschnitt 1:46,50) (Jan Seemann)
-- [ ] U23-EM-Norm 2027: DLV-Nominierungsrichtlinien 2027 noch nicht veröffentlicht (Jan Seemann)
+- [ ] U23-EM-Norm 2027: DLV-Nominierungsrichtlinien 2027 noch nicht veröffentlicht, erwartet Anfang 2027 (Jan Seemann)
+- [ ] **FISU: adh-Interessensbekundung – 2025 lief sie 01.10.–30.11. des Vorjahres, für 2027 Frist jetzt prüfen**
+- [ ] FISU: adh-Norm 2027, DHM-Termin 2027, Zeitplan 800 m in Chungju
 - [ ] Ausgangsumfang 70 km oder 78 km/Woche einheitlich festlegen (Jan Petermann)
 - [ ] Mesozyklen und Mikrozyklen fachlich freigeben (Jan Petermann)
 - [ ] Deutung „MIZ vWK“ bestätigen (Vorbereitungswettkampf vs. Woche vor dem Wettkampf)
