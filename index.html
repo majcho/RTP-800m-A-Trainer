@@ -61,6 +61,8 @@ ul.liste{list-style:none}
 ul.liste li{position:relative;padding-left:18px;margin:5px 0;font-size:17px;line-height:1.35}
 ul.liste li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--rot)}
 ul.liste.gold li::before{background:var(--gold)}
+ul.liste.quellen li{font-size:14px;margin:3px 0;break-inside:avoid}
+ul.liste.quellen li::before{top:6px;width:6px;height:6px}
 .kpi{background:var(--anthrazit);color:#fff;border-radius:6px;padding:16px;text-align:center}
 .kpi .w{font:700 40px "Barlow Condensed",sans-serif;color:var(--gold);line-height:1}
 .kpi .l{font-size:14px;margin-top:6px;opacity:.85}
@@ -136,10 +138,10 @@ svg text{font-family:"Barlow",sans-serif}
     <h2>Gliederung</h2>
     <div class="unter">20 Minuten · 4 Blöcke à ca. 5 Minuten</div>
     <div class="grid4" style="flex:1">
-      <div class="karte dunkel"><h3>1 · Einführung &amp; Rahmen</h3><ul class="liste"><li>Team &amp; Aufgabe</li><li>Athletenprofil</li><li>Voraussetzungen</li><li>Umfeld &amp; Wege</li><li>Monitoring &amp; Daten</li></ul><p style="margin-top:12px"><span class="tag a">Oliver Majchrzak</span></p></div>
-      <div class="karte"><h3>2 · Ausgangslage &amp; Ziel</h3><ul class="liste"><li>Leistungsentwicklung</li><li>Langfristige Entwicklung</li><li>Konkurrenz &amp; Kadernormen</li><li>Saisonhöhepunkte EM/FISU</li><li>Leistungsprofil</li><li>Leistungsdiagnostik</li><li>Trainingsschwerpunkte</li></ul><p style="margin-top:12px"><span class="tag">Jan Seemann</span></p></div>
-      <div class="karte gold"><h3>3 · MAZ · MEZ · MIZ VP</h3><ul class="liste"><li>Planungsprinzipien</li><li>Makrozyklus (MAZ)</li><li>Wettkampfkalender</li><li>Mesozyklen (MEZ)</li><li>MIZ aVP</li><li>MIZ sVP</li></ul><p style="margin-top:12px"><span class="tag g">Jan Petermann</span></p></div>
-      <div class="karte dunkel"><h3>4 · MIZ WK &amp; Ernährung</h3><ul class="liste"><li>MIZ vWK</li><li>MIZ hWK (U23-EM)</li><li>Ernährung &amp; Fuelling</li><li>Risiken</li><li>Fazit</li></ul><p style="margin-top:12px"><span class="tag a">Guido Sander</span></p></div>
+      <div class="karte dunkel"><h3>1 · Einführung &amp; Rahmen</h3><ul class="liste"><li>Team &amp; Aufgabe</li><li>Athletenprofil</li><li>Voraussetzungen &amp; Umfeld</li><li>Monitoring &amp; Daten</li></ul><p style="margin-top:12px"><span class="tag a">Oliver Majchrzak</span></p></div>
+      <div class="karte"><h3>2 · Ausgangslage &amp; Ziel</h3><ul class="liste"><li>Leistungsentwicklung</li><li>Langfristige Entwicklung</li><li>Konkurrenz &amp; Kadernormen</li><li>Saisonhöhepunkte</li><li>Leistungsprofil</li><li>Trainingsschwerpunkte</li></ul><p style="margin-top:12px"><span class="tag">Jan Seemann</span></p></div>
+      <div class="karte gold"><h3>3 · MaZ · MeZ · MiZ VP</h3><ul class="liste"><li>Planungsprinzipien</li><li>Leistungsdiagnostik</li><li>Makrozyklus (MaZ)</li><li>Wettkampfkalender</li><li>Mesozyklen (MeZ)</li><li>MiZ aVP</li><li>MiZ sVP</li></ul><p style="margin-top:12px"><span class="tag g">Jan Petermann</span></p></div>
+      <div class="karte dunkel"><h3>4 · MiZ WK &amp; Ernährung</h3><ul class="liste"><li>MiZ vWK</li><li>MiZ hWK (U23-EM)</li><li>Ernährung &amp; Fuelling</li><li>Risiken</li><li>Fazit</li></ul><p style="margin-top:12px"><span class="tag a">Guido Sander</span></p></div>
     </div>
   </div>
 </section>
@@ -156,11 +158,11 @@ svg text{font-family:"Barlow",sans-serif}
       <div>
         <div class="karte dunkel" style="margin-bottom:14px"><h3>Aufgabenstellung (DLV)</h3>
           <ul class="liste"><li>Athlet, 20 Jahre</li><li>Disziplin 800 m</li><li>PB 1:45,90</li><li>Ziel: U23-EM im kommenden Jahr</li></ul></div>
-        <div class="karte gold"><h3>Geforderte Darstellungen</h3><p>Ausgangslage · langfristige Entwicklung · MAZ · MEZ · MIZ aVP · MIZ sVP · MIZ vWK · MIZ hWK</p><p style="margin-top:6px;font-size:14px;color:#6B6672">Planungszeitraum KW 42/2026 – KW 39/2027 · Prüfungsleistungen lt. Einführungs-PDF vom 03.09.2026</p></div>
+        <div class="karte gold"><h3>Geforderte Darstellungen</h3><p>Ausgangslage · langfristige Entwicklung · MaZ · MeZ · MiZ aVP · MiZ sVP · MiZ vWK · MiZ hWK</p><p style="margin-top:6px;font-size:14px;color:#6B6672">Planungszeitraum KW 42/2026 – KW 39/2027 · Prüfungsleistungen lt. Einführungs-PDF vom 03.09.2026</p></div>
       </div>
       <table class="tab">
         <tr><th>Teammitglied</th><th>Verantwortung</th></tr>
-        <tr><td class="k">Guido Sander</td><td>Protokoll, Umfeld, Ernährung, Gewicht, Fuelling, Wettkampfversorgung</td></tr>
+        <tr><td class="k">Guido Sander</td><td>Umfeld, Ernährung, Gewicht, Fuelling, Wettkampfversorgung</td></tr>
         <tr><td class="k">Jan Seemann</td><td>Konkurrenzanalyse, Bestenlisten D + EU, Kadernormen, Stärken-Schwächen-Profil</td></tr>
         <tr><td class="k">Jan Petermann</td><td>Trainingspläne (Makro/Meso/Mikro), Leistungsdiagnostik</td></tr>
         <tr><td class="k">Oliver Majchrzak</td><td>Präsentation (HTML), Rahmenbedingungen, Monitoring</td></tr>
@@ -180,7 +182,7 @@ svg text{font-family:"Barlow",sans-serif}
       <div class="kpi"><div class="w">20,4</div><div class="l">BMI (66 / 1,80²)</div></div>
     </div>
     <div class="grid3">
-      <div class="karte"><h3>Energiebedarf</h3><ul class="liste"><li>Grundumsatz ca. 1.734 kcal/Tag</li><li>Gesamtumsatz 3.121–3.815 kcal/Tag</li><li>= Grundumsatz × PAL 1,8–2,2</li></ul></div>
+      <div class="karte"><h3>Energiebedarf</h3><ul class="liste"><li>Grundumsatz ca. 1.739 kcal/Tag (Harris-Benedict: 66,47 + 13,75 × kg + 5,003 × cm − 6,755 × Jahre)</li><li>Gesamtumsatz 3.130–3.827 kcal/Tag</li><li>= Grundumsatz × PAL 1,8–2,2</li></ul></div>
       <div class="karte gold"><h3>Kader</h3><ul class="liste gold"><li>Bundeskader PK (Norm Jg. 2006: 1:47,00)</li><li>Landeskader NDS: LK-Ü (U23/Aktive)</li><li>Laufteam Niedersachsen</li></ul></div>
       <div class="karte dunkel"><h3>Leistungsstand 10/2026</h3><ul class="liste"><li>Wochenumfang ca. 70 km</li><li>Vl3 3:01 min/km</li><li>Langfristziel: unter 1:44</li></ul></div>
     </div>
@@ -189,22 +191,15 @@ svg text{font-family:"Barlow",sans-serif}
 
 <section class="slide" data-block="1" data-redner="Oliver Majchrzak">
   <div class="inhalt">
-    <h2>Voraus<span class="akz">setzungen</span></h2>
-    <div class="unter">Training · soziale Strukturen · Gesundheit · Pflichten</div>
-    <div class="grid2" style="gap:16px">
-      <div class="karte dunkel"><h3>Training</h3><ul class="liste"><li>LA-Stadion, Sporthalle, LA-Halle, Kraftraum, Wald</li><li>Trainingsgruppe + Laufteam NDS: ca. 8 Athleten Mittel-/Langstrecke <span class="warn">⚠ Annahme</span></li><li>Physiotherapie 1×/Woche · SPA nach Bedarf · MHH halbjährlich</li></ul></div>
-      <div class="karte"><h3>Soziale Strukturen</h3><ul class="liste"><li>Gute familiäre Unterstützung</li><li>Freundeskreis in Sport und Studium</li><li>Örtlicher Laufladen (kleines Sponsoring)</li><li>Lehramtsstudium Leibniz Universität Hannover (LUH), WG</li></ul></div>
-      <div class="karte gold"><h3>Gesundheit</h3><ul class="liste gold"><li>Blutwerte regelmäßig kontrolliert (MHH)</li><li>Derzeit keine Verletzung, orthopädisch ohne Befund</li><li>Keine Allergien, keine Vorerkrankungen, keine Medikamente</li></ul></div>
-      <div class="karte"><h3>Pflichten (Kader)</h3><ul class="liste"><li>NADA-Meldepflicht im ADAMS-System</li><li>Trainingslager-Aufenthalte rechtzeitig melden</li><li>Supplemente/Medikamente nur nach Prüfung</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-block="1" data-redner="Oliver Majchrzak">
-  <div class="inhalt">
-    <h2>Umfeld &amp; <span class="akz">Ressourcen</span></h2>
-    <div class="unter">Kurze Wege in Hannover – alles Wesentliche ist mit dem Rad erreichbar</div>
-    <div class="grid2">
+    <h2>Voraussetzungen &amp; <span class="akz">Umfeld</span></h2>
+    <div class="unter">Training · soziale Strukturen · Gesundheit · Pflichten – kurze Wege in Hannover</div>
+    <div class="grid2" style="flex:1;min-height:0;align-items:stretch">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="karte dunkel" style="padding:10px 16px"><h3 style="font-size:18px;margin-bottom:4px">Training</h3><p style="font-size:15px">LA-Stadion, Sporthalle, LA-Halle, Kraftraum, Wald · Trainingsgruppe ca. 8 Athleten Mittel-/Langstrecke · Physiotherapie 1×/Woche · Sportmedizin MHH halbjährlich</p></div>
+        <div class="karte" style="padding:10px 16px"><h3 style="font-size:18px;margin-bottom:4px">Soziale Strukturen</h3><p style="font-size:15px">Gute familiäre Unterstützung · Freundeskreis in Sport und Studium · Örtlicher Laufladen (kleines Sponsoring) · Lehramtsstudium LUH, WG</p></div>
+        <div class="karte gold" style="padding:10px 16px"><h3 style="font-size:18px;margin-bottom:4px">Gesundheit</h3><p style="font-size:15px">Blutwerte bei jeder Leistungsdiagnostik (4×/Jahr) · Derzeit keine Verletzung, orthopädisch ohne Befund · Keine Allergien, Vorerkrankungen oder Medikamente</p></div>
+        <div class="karte" style="padding:10px 16px"><h3 style="font-size:18px;margin-bottom:4px">Pflichten (Kader)</h3><p style="font-size:15px">NADA-Meldepflicht im ADAMS-System · Trainingslager-Aufenthalte rechtzeitig melden · Supplemente/Medikamente nur nach Prüfung</p></div>
+      </div>
       <svg viewBox="0 0 560 440" width="100%" height="100%" aria-label="Netzwerk um den Athleten">
         <g stroke="#DDD8E0" stroke-width="2">
           <line x1="280" y1="220" x2="280" y2="60"/><line x1="280" y1="220" x2="470" y2="120"/>
@@ -217,23 +212,12 @@ svg text{font-family:"Barlow",sans-serif}
         <g font-size="15" font-weight="600" text-anchor="middle">
           <circle cx="280" cy="62" r="56" fill="#3A3540"/><text x="280" y="56" fill="#fff">Heimtrainer</text><text x="280" y="74" fill="#F2B300" font-size="12">A-Trainer i. A.</text>
           <circle cx="470" cy="120" r="56" fill="#3A3540"/><text x="470" y="116" fill="#fff">Laufteam</text><text x="470" y="134" fill="#F2B300" font-size="12">Niedersachsen</text>
-          <circle cx="490" cy="300" r="56" fill="#F2B300"/><text x="490" y="296" fill="#1F1C23">Physio</text><text x="490" y="314" fill="#1F1C23" font-size="12">MHH · SPA</text>
+          <circle cx="490" cy="300" r="56" fill="#F2B300"/><text x="490" y="296" fill="#1F1C23">Physio</text><text x="490" y="314" fill="#1F1C23" font-size="12">MHH</text>
           <circle cx="280" cy="378" r="56" fill="#F2B300"/><text x="280" y="374" fill="#1F1C23">OSP / Stadion</text><text x="280" y="392" fill="#1F1C23" font-size="12">Halle · Kraftraum</text>
           <circle cx="80" cy="300" r="56" fill="#3A3540"/><text x="80" y="296" fill="#fff">Uni / LUH</text><text x="80" y="314" fill="#F2B300" font-size="12">Studium</text>
           <circle cx="90" cy="120" r="56" fill="#3A3540"/><text x="90" y="116" fill="#fff">Familie</text><text x="90" y="134" fill="#F2B300" font-size="12">Freunde</text>
         </g>
       </svg>
-      <div>
-        <table class="tab">
-          <tr><th>Strecke</th><th>Entfernung</th><th>Rad</th></tr>
-          <tr><td class="k">WG – Uni (LUH)</td><td>ca. 1,5 km <span class="warn">⚠</span></td><td>ca. 5 min</td></tr>
-          <tr><td class="k">WG – Stadion</td><td>ca. 4,5 km <span class="warn">⚠</span></td><td>ca. 15 min</td></tr>
-          <tr><td class="k">WG – OSP</td><td>ca. 4,5 km <span class="warn">⚠</span></td><td>ca. 15 min</td></tr>
-          <tr><td class="k">Uni – OSP</td><td>4,3 km</td><td>ca. 15 min</td></tr>
-        </table>
-        <p class="hinweis" style="margin-top:6px">Annahme: WG in der Nordstadt nahe LUH; Erika-Fisch-Stadion und Sportleistungszentrum liegen beim OSP im Sportpark Hannover.</p>
-        <div class="karte gold" style="margin-top:12px"><h3>Trainingsmittel Heimtrainer</h3><p>Laktatmessgerät Lactate Plus und weitere Trainingsmittel</p></div>
-      </div>
     </div>
   </div>
 </section>
@@ -272,17 +256,16 @@ svg text{font-family:"Barlow",sans-serif}
 <section class="slide" data-block="2" data-redner="Jan Seemann">
   <div class="inhalt">
     <h2>Ausgangslage: <span class="akz">Leistungsentwicklung</span></h2>
-    <div class="unter">800-m-Tempo und Vl3 nach Alter · Ist, Prognose mit Korridor, Qualifikationsnormen</div>
+    <div class="unter">800-m-Tempo und Vl3 je Saison · Ist, Prognose mit Korridor, Qualifikationsnormen</div>
     <div style="display:grid;grid-template-columns:2.35fr 1fr;gap:18px;flex:1;min-height:0">
       <svg id="chartLeistung" viewBox="0 0 860 500" width="100%" height="100%"></svg>
       <div>
         <div class="kpi" style="margin-bottom:10px;padding:12px"><div class="w" style="font-size:34px">1:44,3</div><div class="l">Prognose 2027 · Korridor 1:43,8 – 1:45,1</div></div>
-        <div class="karte" style="margin-bottom:10px;padding:12px 14px"><h3 style="font-size:17px">Langfristig</h3><p style="font-size:14px">1:43,5 (21) · 1:42,6 (23) · Plateau 1:42,5 · Korridor 1:42 – 1:44</p></div>
-        <div class="karte gold" style="margin-bottom:10px;padding:12px 14px"><h3 style="font-size:17px">Quali-Normen</h3><p style="font-size:14px">U23-EM 1:46,80 · EM 1:44,80 · Olympia 1:44,70 · WM 1:43,00 <span class="warn">⚠ U23-EM mit 22 J. nicht startberechtigt</span></p></div>
+        <div class="karte" style="margin-bottom:10px;padding:12px 14px"><h3 style="font-size:17px">Langfristig</h3><p style="font-size:14px">1:43,5 (2028) · 1:42,6 (2030) · Plateau 1:42,5 · Korridor 1:42 – 1:44</p></div>
         <div class="karte dunkel" style="padding:12px 14px"><h3 style="font-size:17px">Vl3</h3><p style="font-size:14px">3:35 → 3:01 min/km; Ziel 2:56 durch Umfang 78 → 90 km/Wo. (+15 %, Überdistanztyp), langfristig 2:52</p></div>
       </div>
     </div>
-    <div class="hinweis">Quelle: Leistungsentwicklungsgrafik Heimtrainer (Stand 10/2026). Altersachse wie in der Originalgrafik.</div>
+    <div class="hinweis">Quelle: Leistungsentwicklungsgrafik Heimtrainer (Stand 10/2026). Normen: World Athletics, European Athletics, DLV – Werte und Belege auf der Folie „Langfristige Entwicklung“.</div>
   </div>
 </section>
 
@@ -292,16 +275,16 @@ svg text{font-family:"Barlow",sans-serif}
     <div class="unter">Perspektive bis zu den Olympischen Spielen 2032 · Zeiten lt. Prognosegrafik</div>
     <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:22px;min-height:0">
       <table class="tab">
-        <tr><th>Saison</th><th>Alter</th><th>Klasse</th><th>Zielwettkampf / Norm</th><th>800 m</th><th>km/Wo.</th></tr>
-        <tr style="background:#FFF4D1"><td class="k">2027</td><td>20</td><td>U23</td><td><b>U23-EM Bydgoszcz</b> · Norm 1:46,80</td><td><b>1:44,3</b></td><td>90</td></tr>
-        <tr><td class="k">2028</td><td>21</td><td>U23</td><td>DM, Kadererhalt</td><td>1:43,5</td><td>95</td></tr>
-        <tr><td class="k">2029</td><td>22</td><td>Männer</td><td>WM 2029 · Norm 1:43,00</td><td>1:43,0</td><td>100</td></tr>
-        <tr><td class="k">2030</td><td>23</td><td>Männer</td><td>EM 2030 · Norm 1:44,80</td><td>1:42,6</td><td>100</td></tr>
-        <tr><td class="k">2032</td><td>25</td><td>Männer</td><td>Olympia Brisbane · Norm 1:44,70</td><td>1:42,5</td><td>100</td></tr>
+        <tr><th>Saison</th><th>Jg.-Alter</th><th>Klasse</th><th>Zielwettkampf / Norm</th><th>800 m</th><th>km/Wo.</th></tr>
+        <tr style="background:#FFF4D1"><td class="k">2027</td><td>21</td><td>U23</td><td><b>U23-EM Bydgoszcz</b> · DLV-Norm 1:47,50¹</td><td><b>1:44,3</b></td><td>90</td></tr>
+        <tr><td class="k">2028</td><td>22</td><td>U23</td><td>DM (A-Norm 1:51,00²), Kadererhalt</td><td>1:43,5</td><td>95</td></tr>
+        <tr><td class="k">2029</td><td>23</td><td>Männer</td><td>WM 2029 · Norm 1:43,00³</td><td>1:43,0</td><td>100</td></tr>
+        <tr><td class="k">2030</td><td>24</td><td>Männer</td><td>EM 2030 · Norm 1:44,80⁴</td><td>1:42,6</td><td>100</td></tr>
+        <tr><td class="k">2032</td><td>26</td><td>Männer</td><td>Olympia Brisbane · Norm 1:44,70⁵</td><td>1:42,5</td><td>100</td></tr>
       </table>
       <div>
         <svg id="chartVl3" viewBox="0 0 440 250" width="100%" height="250"></svg>
-        <p class="hinweis" style="margin-top:4px">Normen und Zeiten aus der Leistungsentwicklungsgrafik. <span class="warn">⚠ 2028–2032: km/Wo. und Zwischenwerte Vorschlag</span></p>
+        <p class="hinweis" style="margin-top:4px">Jeweils letzte veröffentlichte Norm: ¹ DLV U23-EM 2025 · ² DLV DM 2026 · ³ World Athletics WM 2027 · ⁴ European Athletics EM 2026 · ⁵ Olympia Paris 2024. Jg.-Alter = Saison − 2006.</p>
       </div>
     </div>
     <div class="grid3" style="margin-top:16px">
@@ -330,6 +313,12 @@ svg text{font-family:"Barlow",sans-serif}
           <tr style="background:#FFF4D1"><td class="k">6</td><td><b>Max Müller</b></td><td>GER</td><td><b>2006</b></td><td><b>1:45,90</b></td></tr>
         </table>
         <p class="hinweis" style="margin-top:4px">Auswertung der europäischen U23-Top-20 2026 (bis 1:45,90). Nicht aufgeführt: Anisimov (RUS, Jg. 2008, 1:45,64) – Russland gesperrt.</p>
+        <table class="tab" style="margin-top:10px;font-size:14px">
+          <tr><th colspan="4">DLV-Kadernormen 2026/27 · 800 m (Stand 03.03.2026)</th></tr>
+          <tr><td class="k">NK1</td><td>Jg. 2006</td><td>1:48,00</td><td>–</td></tr>
+          <tr style="background:#FFF4D1"><td class="k">PK</td><td><b>Jg. 2006</b></td><td><b>1:47,00</b> → Max: Bundeskader PK</td><td>–</td></tr>
+          <tr><td class="k">PK</td><td>Jg. 2005</td><td>1:46,00 (Kadererhalt 2028)</td><td>Dreierschnitt 1:46,50</td></tr>
+        </table>
       </div>
       <div>
         <table class="tab">
@@ -348,47 +337,23 @@ svg text{font-family:"Barlow",sans-serif}
   </div>
 </section>
 
-<section class="slide" data-block="2" data-redner="Jan Seemann">
-  <div class="inhalt">
-    <h2>Kader<span class="akz">normen</span></h2>
-    <div class="unter">DLV-Kadernormen Lauf/Gehen 2026/2027 (Stand 03.03.2026) · 800 m Männer</div>
-    <div class="grid2">
-      <table class="tab">
-        <tr><th>Kader</th><th>Jg.</th><th>Alter</th><th>Norm</th><th>Dreierschnitt</th></tr>
-        <tr><td class="k">NK1</td><td>2007</td><td>19</td><td>1:49,00</td><td>–</td></tr>
-        <tr><td class="k">NK1</td><td>2006</td><td>20</td><td>1:48,00</td><td>–</td></tr>
-        <tr><td class="k">PK</td><td>2007</td><td>19</td><td>1:48,00</td><td>–</td></tr>
-        <tr style="background:#FFF4D1"><td class="k">PK</td><td><b>2006</b></td><td>20</td><td><b>1:47,00</b></td><td>–</td></tr>
-        <tr><td class="k">PK</td><td>2005</td><td>21</td><td>1:46,00</td><td>1:46,50</td></tr>
-        <tr><td class="k">PK</td><td>2004</td><td>22</td><td>1:45,50</td><td>1:46,00</td></tr>
-        <tr><td class="k">PK</td><td>≤ 2001</td><td>25+</td><td>1:44,70</td><td>1:45,00</td></tr>
-      </table>
-      <div>
-        <div class="karte gold" style="margin-bottom:12px"><h3>Kaderstatus Max</h3><p>1:45,90 &lt; PK-Norm Jg. 2006 (1:47,00) → <b>Bundeskader PK</b>. Landeskader NLV: <b>LK-Ü</b> (U23/Aktive).</p></div>
-        <div class="karte" style="margin-bottom:12px"><h3>Kadererhalt 2028</h3><p>Im Folgejahr gilt für Max (21 J.) voraussichtlich 1:46,00 oder Dreierschnitt 1:46,50 <span class="warn">⚠ Tabelle 2027/28 prüfen</span></p></div>
-        <div class="karte dunkel"><h3>Normen Meisterschaften</h3><p>U23-EM 1:46,80 · EM 1:44,80 · Olympia 1:44,70 · WM 1:43,00 <span class="warn">⚠ lt. Grafik; DLV-Nominierungsrichtlinien 2027 noch nicht veröffentlicht</span></p></div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <section class="slide" data-block="2" data-redner="Jan Seemann">
   <div class="inhalt">
-    <h2>Saisonhöhepunkte 2027: <span class="akz">U23-EM &amp; FISU</span></h2>
-    <div class="unter">Max ist Student (LUH) → FISU World University Games als zweiter Höhepunkt · DM Männer entfällt</div>
+    <h2>Saisonhöhepunkte 2027: <span class="akz">U23-EM</span></h2>
+    <div class="unter">Ein Hauptwettkampf: U23-EM Bydgoszcz · DM U23 als Formtest · DM Männer als Option</div>
     <svg id="chartHoehe" viewBox="0 0 1180 150" width="100%" height="150"></svg>
     <div class="grid2" style="margin-top:8px">
-      <table class="tab" style="font-size:13.5px">
-        <tr><th>Nominierung (Analogie 2025)</th><th>Zeitpunkt 2026/27</th></tr>
-        <tr><td class="k">adh-Interessensbekundung</td><td>ca. 01.10.–30.11.2026 <span class="warn">⚠ jetzt prüfen</span></td></tr>
-        <tr><td class="k">adh-Bewerbung</td><td>ca. Februar–März 2027</td></tr>
-        <tr><td class="k">DHM (Teilnahme Pflicht)</td><td>ca. Ende Mai 2027 <span class="warn">⚠</span></td></tr>
-        <tr><td class="k">adh-Nominierungsschluss</td><td>ca. Anfang Juni 2027</td></tr>
-        <tr><td class="k">DLV-Richtlinien U23-EM</td><td>erwartet Anfang 2027</td></tr>
+      <table class="tab">
+        <tr><th>Wettkampf</th><th>Termin</th><th>Rolle</th></tr>
+        <tr><td class="k">DM U23</td><td>09.–11.07.2027</td><td>Formtest, Rennhärte 2 Wochen vor der EM</td></tr>
+        <tr style="background:#FFF4D1"><td class="k">U23-EM</td><td>22.–25.07.2027</td><td><b>Hauptwettkampf</b>, Leistungshöhepunkt</td></tr>
+        <tr><td class="k">DM Männer</td><td>30.07.–01.08.2027</td><td>Option, eine Woche nach der EM</td></tr>
       </table>
       <div>
-        <div class="karte" style="margin-bottom:10px"><h3>FISU-Norm 800 m (2025)</h3><p>adh-A 1:46,30 · adh-B 1:47,80 → Max erfüllt A <span class="warn">⚠ Norm 2027 offen</span></p></div>
-        <div class="karte gold"><h3>Abwägung</h3><p>+ zweiter internationaler Höhepunkt, Rennerfahrung · − nur ca. 2 Wochen nach der EM, Reise nach Korea, 7 h Zeitverschiebung</p></div>
+        <div class="karte" style="margin-bottom:10px"><h3>Nominierung U23-EM</h3><p>Max erfüllt die Norm bereits mit 1:45,90. DLV-Nominierungsrichtlinien 2027 erscheinen Anfang 2027.</p></div>
+        <div class="karte gold"><h3>DM Männer integrieren</h3><p>Start, falls die EM ein taktisches Rennen wurde: Form ist eine Woche später noch da – Rennerfahrung gegen die Männer.</p></div>
       </div>
     </div>
   </div>
@@ -403,13 +368,54 @@ svg text{font-family:"Barlow",sans-serif}
       <div>
         <div class="karte" style="margin-bottom:12px"><h3>Stärken</h3><ul class="liste"><li>Anthropometrie (100)</li><li>Anaerobe Ausdauer (90)</li><li>Psychologie, Schnelligkeit, Schnellkraft (je 80)</li></ul></div>
         <div class="karte gold" style="margin-bottom:12px"><h3>Schwächen</h3><ul class="liste gold"><li>Technik / Laufökonomie (60)</li><li>Aerobe Ausdauer Vl3 (70)</li><li>Wettkampfleistung (70)</li></ul></div>
-        <p class="hinweis"><span class="warn">⚠ angenommene Werte</span> Ist nach Auswertung der Gruppe; Ziel 07/2027 ist unser Vorschlag.</p>
+        <p class="hinweis">Ist: Auswertung 14.10.2026 · Ziel 07/2027: Planungsziel des Trainerteams.</p>
       </div>
     </div>
   </div>
 </section>
 
+
+
 <section class="slide" data-block="2" data-redner="Jan Seemann">
+  <div class="inhalt">
+    <h2>Ziele &amp; <span class="akz">Trainingsschwerpunkte 2027</span></h2>
+    <div class="unter">Aus Leistungsprofil und Prognose abgeleitet</div>
+    <div class="grid4" style="margin-bottom:20px">
+      <div class="kpi"><div class="w">EM</div><div class="l">U23-EM: Medaillenkandidat</div></div>
+      <div class="kpi"><div class="w">1:44,3</div><div class="l">Zielzeit Saison 2027</div></div>
+      <div class="kpi"><div class="w">90 km</div><div class="l">Wochenumfang Spitze</div></div>
+      <div class="kpi"><div class="w">2:56</div><div class="l">Vl3 min/km (aktuell 3:01)</div></div>
+    </div>
+    <div class="grid4">
+      <div class="karte"><h3>1 · Aerobe Ausdauer</h3><p>Profilwert 70 → 85: Umfang +15 %, Schwelle, Vl3 auf 2:56</p></div>
+      <div class="karte gold"><h3>2 · Technik</h3><p>Profilwert 60 → 75: Lauf-ABC, Lauftechnik, Video</p></div>
+      <div class="karte dunkel"><h3>3 · Wettkampfleistung</h3><p>Profilwert 70 → 85: Rennerfahrung, Taktik, Rundenrennen</p></div>
+      <div class="karte"><h3>4 · Stärken erhalten</h3><p>Anaerobe Ausdauer, Schnelligkeit, Schnellkraft; Ernährung als Reserve</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide kapitel" data-block="3" data-redner="Jan Petermann">
+  <div class="inhalt"><div class="knr">03</div><h2>MaZ, MeZ &amp; Mikrozyklen VP</h2><div class="wer">Jan Petermann</div></div>
+</section>
+
+<section class="slide" data-block="3" data-redner="Jan Petermann">
+  <div class="inhalt">
+    <h2>Planungs<span class="akz">prinzipien</span></h2>
+    <div class="unter">Was soll das Training bewirken?</div>
+    <div class="zitat">Anpassung entsteht nur durch eindeutige Reize: ein Schwerpunkt pro Block über 4–6 Wochen – kein Mischen von Schwelle und VO2max in einer Einheit.</div>
+    <div class="grid3" style="margin-top:14px">
+      <div class="karte"><h3>Doppelperiodisierung</h3><p>Hallensaison als Zwischenziel, Hauptwettkampf U23-EM im Juli</p></div>
+      <div class="karte gold"><h3>Blockprinzip</h3><p>Mesozyklen 3:1 (Belastung : Entlastung), ein Kernreiz je Block</p></div>
+      <div class="karte dunkel"><h3>Umfang</h3><p>Steigerung von ca. 70–78 auf ca. 90 km/Woche, max. +10 % pro Woche</p></div>
+      <div class="karte dunkel"><h3>Steuerung</h3><p>Laktat (Vl3/IAS) und Testläufe statt Tempovorgaben nach Gefühl</p></div>
+      <div class="karte"><h3>Studium</h3><p>Prüfungen (Feb./Juli) fallen auf DM Halle und U23-EM → früher mit dem Lernen beginnen, Prüfungsphasen als Entlastungswochen</p></div>
+      <div class="karte gold"><h3>Realismus</h3><p>Planung so, wie wir sie zu 90–95 % selbst umsetzen würden</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-block="3" data-redner="Jan Petermann">
   <div class="inhalt">
     <h2>Leistungs<span class="akz">diagnostik</span></h2>
     <div class="unter">Vier Messpunkte – Tempobereiche werden laufend angepasst</div>
@@ -420,64 +426,25 @@ svg text{font-family:"Barlow",sans-serif}
       <div class="karte dunkel"><h3>LD 4 · KW 23</h3><p>Feinsteuerung vor der Qualifikationsphase</p></div>
     </div>
     <div class="grid2">
-      <div class="karte"><h3>Inhalte</h3><ul class="liste"><li>Laktat-Stufentest Laufband/Bahn: Vl3, IAS</li><li>Verhältnis Vl3 zu vVO2max → Lage der Tempobereiche</li><li>Testläufe 600 m / 1000 m (spezielle Ausdauer)</li><li>Kraftdiagnostik, Sprungkraft</li></ul></div>
-      <div class="karte gold"><h3>Ort</h3><ul class="liste gold"><li>Hannover vor Ort: Lactate Plus des Heimtrainers</li><li>Alternativ: IAT Leipzig (umfassender, Anreise nötig)</li></ul><p style="margin-top:10px"><span class="warn">⚠ Entscheidung offen</span></p></div>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-block="2" data-redner="Jan Seemann">
-  <div class="inhalt">
-    <h2>Ziele &amp; <span class="akz">Trainingsschwerpunkte 2027</span></h2>
-    <div class="unter">Aus Leistungsprofil und Prognose abgeleitet</div>
-    <div class="grid4" style="margin-bottom:20px">
-      <div class="kpi"><div class="w">EM</div><div class="l">Teilnahme U23-EM, Finalziel</div></div>
-      <div class="kpi"><div class="w">1:44,3</div><div class="l">Zielzeit Saison 2027</div></div>
-      <div class="kpi"><div class="w">90 km</div><div class="l">Wochenumfang Spitze</div></div>
-      <div class="kpi"><div class="w">2:56</div><div class="l">Vl3 min/km (aktuell 3:01)</div></div>
-    </div>
-    <div class="grid4">
-      <div class="karte"><h3>1 · Aerobe Ausdauer</h3><p>Profilwert 70 → 85: Umfang +15 %, Schwelle, Vl3 auf 2:56</p></div>
-      <div class="karte gold"><h3>2 · Technik</h3><p>Profilwert 60 → 75: Lauf-ABC, Laufökonomie, Video</p></div>
-      <div class="karte dunkel"><h3>3 · Wettkampfleistung</h3><p>Profilwert 70 → 85: Rennerfahrung, Taktik, Rundenrennen</p></div>
-      <div class="karte"><h3>4 · Stärken erhalten</h3><p>Anaerobe Ausdauer, Schnelligkeit, Schnellkraft; Ernährung als Reserve</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="slide kapitel" data-block="3" data-redner="Jan Petermann">
-  <div class="inhalt"><div class="knr">03</div><h2>MAZ, MEZ &amp; Mikrozyklen VP</h2><div class="wer">Jan Petermann</div></div>
-</section>
-
-<section class="slide" data-block="3" data-redner="Jan Petermann">
-  <div class="inhalt">
-    <h2>Planungs<span class="akz">prinzipien</span></h2>
-    <div class="unter">Was soll das Training bewirken?</div>
-    <div class="zitat">Anpassung entsteht nur durch eindeutige Reize: ein Schwerpunkt pro Block über 4–6 Wochen – kein Mischen von Schwelle und VO2max in einer Einheit.</div>
-    <div class="grid3" style="margin-top:14px">
-      <div class="karte"><h3>Doppelperiodisierung</h3><p>Hallensaison als Zwischenziel, Hauptwettkampf U23-EM im Juli, FISU im August</p></div>
-      <div class="karte gold"><h3>Blockprinzip</h3><p>Mesozyklen 3:1 (Belastung : Entlastung), ein Kernreiz je Block</p></div>
-      <div class="karte dunkel"><h3>Umfang</h3><p>Steigerung von ca. 70–78 auf ca. 90 km/Woche <span class="warn">⚠ Ausgangswert abgleichen</span></p></div>
-      <div class="karte dunkel"><h3>Steuerung</h3><p>Laktat (Vl3/IAS) und Testläufe statt Tempovorgaben nach Gefühl</p></div>
-      <div class="karte"><h3>Studium</h3><p>Prüfungsphasen als Entlastungswochen einplanen <span class="warn">⚠ Semestertermine LUH</span></p></div>
-      <div class="karte gold"><h3>Realismus</h3><p>Planung so, wie wir sie zu 90–95 % selbst umsetzen würden</p></div>
+      <div class="karte"><h3>Inhalte</h3><ul class="liste"><li>Laktat-Stufentest Laufband/Bahn: Vl3, IAS</li><li>Verhältnis Vl3 zu vVO2max → Lage der Tempobereiche</li><li>Testläufe 600 m / 1000 m (spezielle Ausdauer)</li><li>Kraftdiagnostik, Sprungkraft</li><li>Blutwerte: Blutbild, Eisen/Ferritin, Vitamin D</li></ul></div>
+      <div class="karte gold"><h3>Ort</h3><ul class="liste gold"><li>Hannover vor Ort: Lactate Plus des Heimtrainers</li><li>Alternativ: IAT Leipzig (umfassender, Anreise nötig)</li></ul></div>
     </div>
   </div>
 </section>
 
 <section class="slide" data-block="3" data-redner="Jan Petermann">
   <div class="inhalt">
-    <h2>Makrozyklus (MAZ) <span class="akz">2026/27</span></h2>
+    <h2>Makrozyklus (MaZ) <span class="akz">2026/27</span></h2>
     <div class="unter">KW 42/2026 – KW 39/2027 · Perioden, Trainingslager, Wettkämpfe</div>
     <svg id="chartJahr" viewBox="0 0 1180 330" width="100%" height="330"></svg>
     <table class="tab" style="margin-top:6px;font-size:13.5px">
       <tr><th>Periode</th><th>Zeitraum</th><th>KW</th><th>Schwerpunkt</th><th>Umfang km/Wo.</th></tr>
-      <tr><td class="k">VP I</td><td>12.10.–20.12.2026</td><td>42–51</td><td>Aerobe Basis, Schwelle, Kraft, Technik</td><td>72 → 88</td></tr>
-      <tr><td class="k">VP II</td><td>21.12.2026–17.01.2027</td><td>52–2</td><td>VO2max, spezielle Vorbereitung Halle, 2 Trainingslager</td><td>85–90</td></tr>
+      <tr><td class="k">VP I</td><td>12.10.–06.12.2026</td><td>42–49</td><td>Aerobe Basis, Schwelle, Kraft, Technik</td><td>72 → 88</td></tr>
+      <tr><td class="k">VP II</td><td>07.12.2026–17.01.2027</td><td>50–2</td><td>VO2max, spezielle Vorbereitung Halle, 2 Trainingslager</td><td>74–90</td></tr>
       <tr><td class="k">WP I</td><td>18.01.–07.03.2027</td><td>3–9</td><td>Hallensaison: LM, NDM, DM (EM Halle nur bei Norm)</td><td>65–75</td></tr>
       <tr><td class="k">VP III</td><td>08.03.–09.05.2027</td><td>10–18</td><td>2 Wo. Übergang, dann spezielle Ausdauer, Trainingslager Ostern</td><td>45 → 90</td></tr>
-      <tr><td class="k">WP II</td><td>10.05.–15.08.2027</td><td>19–32</td><td>Sommersaison: DM U23, U23-EM (KW 29), FISU (KW 31/32)</td><td>55–75</td></tr>
-      <tr><td class="k">ÜP</td><td>ab 16.08.2027</td><td>33–39</td><td>Saisonanalyse, Regeneration</td><td>30–40</td></tr>
+      <tr><td class="k">WP II</td><td>10.05.–01.08.2027</td><td>19–30</td><td>Sommersaison: DM U23, U23-EM (KW 29), DM Männer optional (KW 30)</td><td>55–75</td></tr>
+      <tr><td class="k">ÜP</td><td>ab 02.08.2027</td><td>31–39</td><td>Saisonanalyse, Regeneration</td><td>30–40</td></tr>
     </table>
   </div>
 </section>
@@ -498,36 +465,33 @@ svg text{font-family:"Barlow",sans-serif}
         <tr><th colspan="3">Sommersaison (WP II)</th></tr>
         <tr><td class="k">15./16.05.</td><td>Pfingstsportfest (Einstieg)</td><td>Zeven</td></tr>
         <tr><td class="k">30.05.</td><td>Goldenes Oval</td><td>Dresden</td></tr>
-        <tr><td class="k">Ende Mai ⚠</td><td>DHM (Pflicht für FISU)</td><td>o. O.</td></tr>
         <tr><td class="k">19./20.06.</td><td>NDM Männer/Frauen</td><td>Cottbus</td></tr>
         <tr><td class="k">09.–11.07.</td><td>DM U23</td><td>o. O.</td></tr>
         <tr><td class="k" style="background:#FFF4D1">22.–25.07.</td><td style="background:#FFF4D1"><b>U23-EM – Hauptwettkampf</b></td><td style="background:#FFF4D1">Bydgoszcz</td></tr>
-        <tr><td class="k" style="color:#9a94a0">30.07.–01.08.</td><td style="color:#9a94a0"><s>DM Männer/Frauen</s> – entfällt</td><td style="color:#9a94a0">o. O.</td></tr>
-        <tr><td class="k" style="background:#FFF4D1">07.–12.08.</td><td style="background:#FFF4D1"><b>FISU World University Games</b> (LA)</td><td style="background:#FFF4D1">Chungju (KOR)</td></tr>
+        <tr><td class="k">30.07.–01.08.</td><td>DM Männer/Frauen (optional)</td><td>o. O.</td></tr>
       </table>
     </div>
-    <div class="hinweis">Junioren-Gala Mannheim (U23/U20): Termin noch offen. Die U20-EM findet am selben Ort vom 15.–18.07.2027 statt.</div>
   </div>
 </section>
 
 <section class="slide" data-block="3" data-redner="Jan Petermann">
   <div class="inhalt">
-    <h2>Mesozyklen (MEZ) <span class="akz">VP I &amp; VP II</span></h2>
-    <div class="unter">Ein Kernreiz pro Block · Rhythmus 3:1 · Beispiel Wochenumfang in km</div>
+    <h2>Mesozyklen (MeZ) <span class="akz">VP I &amp; VP II</span></h2>
+    <div class="unter">Ein Kernreiz pro Block · Rhythmus 3:1 · Wochenumfang in km, Steigerung max. +10 % pro Woche</div>
     <svg id="chartMeso" viewBox="0 0 1180 300" width="100%" height="300"></svg>
     <div class="grid4" style="margin-top:10px">
       <div class="karte"><h3>Meso 1 · KW 42–45</h3><p>Aerobe Basis: extensive Dauerläufe, Schwellenläufe im Vl3-Bereich</p></div>
       <div class="karte gold"><h3>Meso 2 · KW 46–49</h3><p>Schwelle: Tempodauerläufe und lange Intervalle an der IAS</p></div>
       <div class="karte dunkel"><h3>Meso 3 · KW 50–53</h3><p>VO2max: Intervalle 800–1200 m im vVO2max-Tempo, TL Weihnachten</p></div>
-      <div class="karte"><h3>Meso 4 · KW 1–2</h3><p>Spezielle Ausdauer Halle: RT-nahe Läufe 300–600 m, TL Portugal</p></div>
+      <div class="karte"><h3>Meso 4 · KW 1–2</h3><p>Spezielle Ausdauer Halle: RT-nahe Läufe 300–600 m, TL Portugal → Hallenstart KW 3 (NLV)</p></div>
     </div>
-    <div class="hinweis"><span class="warn">⚠ Vorschlag</span> Umfänge und Inhalte finalisiert Jan Petermann; Trainingslager-Termine und -Orte noch offen.</div>
+    <div class="hinweis">Meso 4 als Kurzblock bis zum ersten Hallenwettkampf (KW 3).</div>
   </div>
 </section>
 
 <section class="slide" data-block="3" data-redner="Jan Petermann">
   <div class="inhalt">
-    <h2>MIZ aVP · <span class="akz">allgemeine Vorbereitung</span></h2>
+    <h2>MiZ aVP · <span class="akz">allgemeine Vorbereitung</span></h2>
     <div class="unter">Beispiel KW 47 (Meso 2 · Kernreiz Schwelle) · ca. 84 km</div>
     <table class="tab">
       <tr><th style="width:70px">Tag</th><th>Vormittag</th><th>Nachmittag</th><th style="width:90px">km</th><th style="width:120px">Intensität</th></tr>
@@ -539,13 +503,13 @@ svg text{font-family:"Barlow",sans-serif}
       <tr><td class="k">Sa</td><td>–</td><td><b>Kernreiz:</b> Tempodauerlauf 8 km im Schwellenbereich</td><td>14</td><td><span class="tag">hoch</span></td></tr>
       <tr><td class="k">So</td><td colspan="2">Langer DL 18 km ruhig</td><td>18</td><td><span class="tag g">niedrig</span></td></tr>
     </table>
-    <div class="hinweis">Tempobereiche aus LD 1 (Vl3 aktuell 3:01 min/km). <span class="warn">⚠ Vorschlag</span> km inkl. Ein- und Auslaufen.</div>
+    <div class="hinweis">Tempobereiche aus LD 1 (Vl3 aktuell 3:01 min/km). km inkl. Ein- und Auslaufen.</div>
   </div>
 </section>
 
 <section class="slide" data-block="3" data-redner="Jan Petermann">
   <div class="inhalt">
-    <h2>MIZ sVP · <span class="akz">spezielle Vorbereitung</span></h2>
+    <h2>MiZ sVP · <span class="akz">spezielle Vorbereitung</span></h2>
     <div class="unter">Beispiel KW 17 · 26.04.–02.05.2027 (VP III) · Kernreiz spezielle Ausdauer · ca. 76 km</div>
     <table class="tab">
       <tr><th style="width:70px">Tag</th><th>Vormittag</th><th>Nachmittag</th><th style="width:90px">km</th><th style="width:120px">Intensität</th></tr>
@@ -557,7 +521,7 @@ svg text{font-family:"Barlow",sans-serif}
       <tr><td class="k">Sa</td><td>–</td><td><b>Kernreiz:</b> 600 m (1:21) – 500 m (66 s) – 400 m (52 s), TP 8'</td><td>12</td><td><span class="tag">hoch</span></td></tr>
       <tr><td class="k">So</td><td colspan="2">Langer DL 16 km ruhig</td><td>16</td><td><span class="tag g">niedrig</span></td></tr>
     </table>
-    <div class="hinweis">Renntempo 1:44 = 13,0 s/100 m (52 s/400 m). <span class="warn">⚠ Vorschlag</span> km inkl. Ein- und Auslaufen.</div>
+    <div class="hinweis">Renntempo 1:44 = 13,0 s/100 m (52 s/400 m). km inkl. Ein- und Auslaufen.</div>
   </div>
 </section>
 
@@ -567,39 +531,42 @@ svg text{font-family:"Barlow",sans-serif}
 
 <section class="slide" data-block="4" data-redner="Guido Sander">
   <div class="inhalt">
-    <h2>MIZ vWK · <span class="akz">Vorbereitungswettkampf</span></h2>
-    <div class="unter">Beispiel KW 24 · 14.–20.06.2027 · NDM Cottbus (19./20.06.) als Formtest · ca. 50 km</div>
+    <h2>MiZ vWK · <span class="akz">Vorbereitungswettkampf</span></h2>
+    <div class="unter">Beispiel KW 24 · 14.–20.06.2027 · NDM Cottbus (19./20.06.) als Formtest · ca. 60 km</div>
     <table class="tab">
       <tr><th style="width:70px">Tag</th><th>Inhalt</th><th style="width:90px">km</th><th style="width:120px">Intensität</th></tr>
-      <tr><td class="k">Mo</td><td>DL 10 km + 4 Steigerungen</td><td>10</td><td><span class="tag g">niedrig</span></td></tr>
-      <tr><td class="k">Di</td><td>4 × 300 m im Renntempo (39 s), TP 5' + Lauf-ABC</td><td>10</td><td><span class="tag">hoch</span></td></tr>
+      <tr><td class="k">Mo</td><td>DL 15 km + 4 Steigerungen</td><td>15</td><td><span class="tag g">niedrig</span></td></tr>
+      <tr><td class="k">Di</td><td>5 km Einlaufen; 4 × 300 m im Renntempo (39 s), TP 5' + Lauf-ABC</td><td>12</td><td><span class="tag">hoch</span></td></tr>
       <tr><td class="k">Mi</td><td>DL 10 km reg. + Kraft-Erhalt (kurz)</td><td>10</td><td><span class="tag a">mittel</span></td></tr>
       <tr><td class="k">Do</td><td>DL 6 km + 3 × 150 m locker-schnell</td><td>7</td><td><span class="tag g">niedrig</span></td></tr>
       <tr><td class="k">Fr</td><td>Anreise Cottbus · 20' Lockerung + 3 Steigerungen</td><td>4</td><td><span class="tag g">niedrig</span></td></tr>
       <tr><td class="k">Sa</td><td><b>Wettkampf 800 m NDM</b> (ggf. Vorlauf/Finale nach Zeitplan)</td><td>6</td><td><span class="tag">WK</span></td></tr>
       <tr><td class="k">So</td><td>Auslaufen/DL 30' · Wettkampfanalyse</td><td>6</td><td><span class="tag g">niedrig</span></td></tr>
     </table>
-    <div class="hinweis"><span class="warn">⚠ Annahme</span> „vWK“ als Woche mit Vorbereitungswettkampf verstanden; Training wird nur leicht reduziert, kein volles Tapering.</div>
+    <div class="hinweis">vWK = Vorbereitungswettkampf: Training nur leicht reduziert, kein volles Tapering. km inkl. Ein- und Auslaufen.</div>
   </div>
 </section>
 
 <section class="slide" data-block="4" data-redner="Guido Sander">
   <div class="inhalt">
-    <h2>MIZ hWK · <span class="akz">U23-EM Bydgoszcz</span></h2>
-    <div class="unter">KW 29 · 19.–25.07.2027 · Frische vor Umfang (Tapering)</div>
+    <h2>MiZ hWK · <span class="akz">U23-EM Bydgoszcz</span></h2>
+    <div class="unter">KW 29 · 19.–25.07.2027 · Frische vor Umfang (Tapering) · ca. 40 km</div>
     <table class="tab">
-      <tr><th style="width:110px">Tag</th><th>Inhalt</th><th style="width:220px">Ziel</th></tr>
-      <tr><td class="k">Mo 19.07.</td><td>DL 8 km + 4 Steigerungen</td><td>Lockerung</td></tr>
-      <tr><td class="k">Di 20.07.</td><td>2 × 300 m im Renntempo, TP 8' + Lauf-ABC</td><td>Tempogefühl, Spannung</td></tr>
-      <tr><td class="k">Mi 21.07.</td><td>Anreise Bydgoszcz, DL 5 km + Steigerungen</td><td>Akklimatisierung</td></tr>
-      <tr><td class="k">Do–So</td><td>Vorlauf und Finale nach Zeitplan (2025: Vorläufe Fr, Finale So); am freien Tag 20–30' Lockerung</td><td>Leistungshöhepunkt</td></tr>
+      <tr><th style="width:110px">Tag</th><th>Inhalt</th><th style="width:200px">Ziel</th><th style="width:70px">km</th></tr>
+      <tr><td class="k">Mo 19.07.</td><td>DL 6 km + 4 Steigerungen</td><td>Lockerung</td><td>8</td></tr>
+      <tr><td class="k">Di 20.07.</td><td>2 × 300 m im Renntempo, TP 8' + Lauf-ABC</td><td>Tempogefühl, Spannung</td><td>7</td></tr>
+      <tr><td class="k">Mi 21.07.</td><td>Anreise Bydgoszcz, DL 5 km + Steigerungen</td><td>Akklimatisierung</td><td>5</td></tr>
+      <tr><td class="k">Do 22.07.</td><td>20' Lockerung + 3 Steigerungen</td><td>Spannung aufbauen</td><td>4</td></tr>
+      <tr><td class="k">Fr 23.07.</td><td><b>Vorlauf 800 m</b> (Ein- und Auslaufen)</td><td>Finaleinzug</td><td>6</td></tr>
+      <tr><td class="k">Sa 24.07.</td><td>20–30' Lockerung</td><td>Regeneration</td><td>4</td></tr>
+      <tr><td class="k">So 25.07.</td><td><b>Finale 800 m</b> (Ein- und Auslaufen)</td><td>Leistungshöhepunkt</td><td>6</td></tr>
     </table>
     <div class="grid3" style="margin-top:18px">
-      <div class="karte"><h3>Umfang</h3><p>ca. 40–50 % der Normalwoche, Intensität erhalten</p></div>
+      <div class="karte"><h3>Umfang</h3><p>ca. 40 km = 40–50 % der Normalwoche (80–90 km), Intensität erhalten</p></div>
       <div class="karte gold"><h3>Vorwoche</h3><p>Letzter harter Reiz 10–12 Tage vor dem Vorlauf</p></div>
       <div class="karte dunkel"><h3>Organisation</h3><p>ADAMS-Aufenthalt melden, Verpflegung vor Ort klären</p></div>
     </div>
-    <div class="hinweis"><span class="warn">⚠ offen</span> Zeitplan der U23-EM 2027 noch nicht veröffentlicht; Modus 2025: 3 Vorläufe + Finale.</div>
+    <div class="hinweis">Zeitplan analog U23-EM 2025: 3 Vorläufe (Fr) + Finale (So).</div>
   </div>
 </section>
 
@@ -608,9 +575,9 @@ svg text{font-family:"Barlow",sans-serif}
     <h2>Ernährung &amp; <span class="akz">Gewichtsmanagement</span></h2>
     <div class="unter">Ausgangslage: viel Fastfood – Ziel: leistungsorientiert und regenerationsfördernd</div>
     <div class="grid3">
-      <div class="karte"><h3>Ziele</h3><ul class="liste"><li>Energiebedarf 3.121–3.815 kcal/Tag decken (keine Unterversorgung bei 90 km/Wo.)</li><li>Gewicht stabil um 66 kg halten</li><li>Regeneration verbessern</li></ul></div>
+      <div class="karte"><h3>Ziele</h3><ul class="liste"><li>Energiebedarf 3.130–3.827 kcal/Tag decken (keine Unterversorgung bei 90 km/Wo.)</li><li>Gewicht stabil um 66 kg halten</li><li>Regeneration verbessern</li></ul></div>
       <div class="karte gold"><h3>Maßnahmen</h3><ul class="liste gold"><li>Ernährungsberatung (Laufteam / Olympiastützpunkt)</li><li>Kochen in der WG: Meal-Prep, einfache Grundrezepte</li><li>Kohlenhydrate nach Trainingsbelastung anpassen</li><li>Protein nach jeder harten Einheit</li></ul></div>
-      <div class="karte dunkel"><h3>Kontrolle</h3><ul class="liste"><li>Gewicht und Ernährungsprotokoll in TrainingPeaks</li><li>Blutwerte (Eisen/Ferritin, Vitamin D) je Periode</li><li>Supplemente nur nach Prüfung (Anti-Doping)</li></ul></div>
+      <div class="karte dunkel"><h3>Kontrolle</h3><ul class="liste"><li>Gewicht und Ernährungsprotokoll in TrainingPeaks</li><li>Blutwerte (Eisen/Ferritin, Vitamin D) bei jeder LD (4×/Jahr)</li><li>Supplemente nur nach Prüfung (Anti-Doping)</li></ul></div>
     </div>
   </div>
 </section>
@@ -632,9 +599,7 @@ svg text{font-family:"Barlow",sans-serif}
       <div class="karte"><h3>Trainingstag</h3><p>Kohlenhydrate vor harten Einheiten, Protein über den Tag verteilt</p></div>
       <div class="karte gold"><h3>Mehrere Runden</h3><p>Zwischen Vorlauf und Finale schnell auffüllen, bekannte Lebensmittel, nichts Neues ausprobieren</p></div>
       <div class="karte dunkel"><h3>Reisen &amp; TL</h3><p>Eigene Snacks mitnehmen, Trinkflasche, Hygiene beachten</p></div>
-    </div>
-    <div class="hinweis"><span class="warn">⚠</span> Mengenangaben ergänzt Guido Sander nach Ernährungsberatung.</div>
-  </div>
+    </div>  </div>
 </section>
 
 <section class="slide" data-block="4" data-redner="Guido Sander">
@@ -643,11 +608,10 @@ svg text{font-family:"Barlow",sans-serif}
     <div class="unter">Was den Plan gefährden kann – und wie wir reagieren</div>
     <table class="tab">
       <tr><th>Risiko</th><th>Folge</th><th>Gegenmaßnahme</th></tr>
-      <tr><td class="k">Prüfungsphasen Studium</td><td>Weniger Schlaf, weniger Training (Feb. + Juli)</td><td>Entlastungswochen legen, Absprache mit Uni <span class="warn">⚠ Termine LUH</span></td></tr>
+      <tr style="background:#FFF4D1"><td class="k" style="background:#FFF4D1">Prüfungsphasen Studium</td><td style="background:#FFF4D1"><b>Größtes Planungsrisiko:</b> Prüfungen im Feb. (DM Halle) und Juli (DM U23, U23-EM) → weniger Schlaf, Stress</td><td style="background:#FFF4D1">Früher mit dem Lernen beginnen, Prüfungstermine mit der LUH abstimmen, Entlastungswochen legen</td></tr>
       <tr><td class="k">Umfangsteigerung</td><td>Überlastung, Verletzung</td><td>Max. +10 % pro Woche, Entlastungswoche je Meso, Physio</td></tr>
       <tr><td class="k">Infekte (Winter, TL)</td><td>Ausfall in VP II / WP I</td><td>Hygiene, Blutwerte, Belastung nach Krankheit reduzieren</td></tr>
       <tr><td class="k">Datenqualität</td><td>Falsche Steuerung</td><td>Kerneinheiten mit Laktat absichern, Belastungsempfinden protokollieren</td></tr>
-      <tr><td class="k">Doppelhöhepunkt EM + FISU</td><td>Ermüdung, Jetlag (7 h)</td><td>Nach EM 1 Wo. Regeneration, Anreise Korea ca. 5–6 Tage vor dem Vorlauf</td></tr>
       <tr><td class="k">Anti-Doping</td><td>Meldepflichtverstoß</td><td>ADAMS-Check vor jeder Reise</td></tr>
     </table>
   </div>
@@ -680,10 +644,14 @@ svg text{font-family:"Barlow",sans-serif}
         <tr><td class="k">IAS</td><td>Individuelle anaerobe Schwelle</td></tr>
         <tr><td class="k">vVO2max</td><td>Geschwindigkeit bei maximaler Sauerstoffaufnahme</td></tr>
         <tr><td class="k">LD</td><td>Leistungsdiagnostik</td></tr>
-        <tr><td class="k">MAZ / MEZ / MIZ</td><td>Makro-, Meso-, Mikrozyklus</td></tr>
+        <tr><td class="k">MaZ / MeZ / MiZ</td><td>Makro-, Meso-, Mikrozyklus</td></tr>
         <tr><td class="k">aVP / sVP</td><td>allgemeine / spezielle Vorbereitungsperiode</td></tr>
         <tr><td class="k">vWK / hWK</td><td>Vorbereitungs- / Hauptwettkampf</td></tr>
         <tr><td class="k">PB / SB</td><td>Persönliche Bestleistung / Saisonbestleistung</td></tr>
+        <tr><td class="k">KH</td><td>Kohlenhydrate</td></tr>
+        <tr><td class="k">HRV</td><td>Herzfrequenzvariabilität</td></tr>
+        <tr><td class="k">reg.</td><td>regenerativ</td></tr>
+        <tr><td class="k">LA</td><td>Leichtathletik</td></tr>
       </table>
       <table class="tab" style="font-size:13px">
         <tr><td class="k">VP / WP / ÜP</td><td>Vorbereitungs-, Wettkampf-, Übergangsperiode</td></tr>
@@ -694,10 +662,11 @@ svg text{font-family:"Barlow",sans-serif}
         <tr><td class="k">HFM</td><td>Herzfrequenzmesser</td></tr>
         <tr><td class="k">OSP / MHH</td><td>Olympiastützpunkt / Medizinische Hochschule Hannover</td></tr>
         <tr><td class="k">PAL / BMI</td><td>Aktivitätsfaktor / Body-Mass-Index</td></tr>
-        <tr><td class="k">SPA</td><td>[ausschreiben] <span class="warn">⚠</span></td></tr>
-        <tr><td class="k">FISU / adh / DHM</td><td>Hochschulsport-Weltverband / Allg. Dt. Hochschulsportverband / Dt. Hochschulmeisterschaften</td></tr>
-        <tr><td class="k">ADAMS</td><td>Meldesystem der Anti-Doping-Agenturen</td></tr>
-        <tr><td class="k">IDA</td><td>Trainingstagebuch des IAT Leipzig</td></tr>
+        <tr><td class="k">NADA / ADAMS</td><td>Nationale Anti Doping Agentur / Meldesystem der Anti-Doping-Agenturen</td></tr>
+        <tr><td class="k">IAT / IDA</td><td>Institut für Angewandte Trainingswissenschaft Leipzig / dessen Trainingstagebuch</td></tr>
+        <tr><td class="k">LUH</td><td>Leibniz Universität Hannover</td></tr>
+        <tr><td class="k">NLV / BLV / NDS</td><td>Niedersächsischer / Bremer Leichtathletik-Verband / Niedersachsen</td></tr>
+        <tr><td class="k">o. O.</td><td>Ort offen</td></tr>
       </table>
     </div>
   </div>
@@ -706,7 +675,7 @@ svg text{font-family:"Barlow",sans-serif}
 <section class="slide" data-block="4" data-redner="">
   <div class="inhalt">
     <h2>Quellen<span class="akz">verzeichnis</span></h2>
-    <ul class="liste" style="margin-top:10px">
+    <ul class="liste quellen" style="margin-top:6px;columns:2;column-gap:28px">
       <li>DLV-Akademie: Gruppenaufgabe Ausbildung Trainer-A, Disziplinblock Lauf/Gehen (2026)</li>
       <li>Gesprächsnotizen der Gruppenarbeit „Erstellung eines RTPs“, 09.10.2026</li>
       <li>Leistungsentwicklungsgrafik 800 m / Vl3 des Heimtrainers (Stand 10/2026)</li>
@@ -715,17 +684,23 @@ svg text{font-family:"Barlow",sans-serif}
       <li>European Athletics: Bydgoszcz 2027 – Vergabe der U23- und U20-EM, european-athletics.com</li>
       <li>allsportdb.com: 2027 European Athletics U23 Championships, 22.–25.07.2027</li>
       <li>Landeshauptstadt Hannover: Sportleistungszentrum und Erika-Fisch-Stadion, hannover.de</li>
-      <li>[Fachliteratur Trainingswissenschaft / Periodisierung ergänzen]</li>
+      <li>Bompa, T. O. &amp; Haff, G. G. (2009): Periodization. Theory and Methodology of Training (5. Aufl.). Champaign: Human Kinetics</li>
+      <li>Issurin, V. B. (2010): New horizons for the methodology and physiology of training periodization. Sports Medicine 40(3), 189–206</li>
+      <li>Weineck, J. (2010): Optimales Training (16. Aufl.). Balingen: Spitta</li>
+      <li>Harris, J. A. &amp; Benedict, F. G. (1918): A Biometric Study of Human Basal Metabolism. PNAS 4(12), 370–373</li>
       <li>DLV: Kadernormen Männer/Frauen 2026/2027, Lauf/Gehen, Stand 03.03.2026, leichtathletik.de</li>
       <li>NLV: Nominierungsrichtlinien Länderkämpfe und Kaderbildung, Saison 2026 (09.06.2026), nlv-la.de</li>
       <li>World Athletics: Toplist 800 m Männer 2026, worldathletics.org</li>
-      <li>European Athletics: U23-EM 2025, 800 m Männer – Ergebnisse (via Wikipedia)</li>
+      <li>European Athletics: U23-EM Bergen 2025, 800 m Männer – Ergebnisse, european-athletics.com</li>
       <li>European Athletics: European Rankings 800 m Männer U23 2026, european-athletics.com</li>
       <li>DLV-Bestenliste 800 m männliche U23, Freiluft 2026, bestenliste.leichtathletik.de</li>
-      <li>adh: Nominierungsrichtlinien Leichtathletik FISU World University Games 2025, adh.de</li>
-      <li>Wikipedia: 2027 Summer World University Games (Chungcheong)</li>
+      <li>DLV: Nominierungsrichtlinien 2025 (U23-EM Bergen, 800 m: 1:47,50), leichtathletik.de</li>
+      <li>DLV: DM Bochum 2026, Meldeliste (800 m Männer: A-Norm 1:51,00 / B-Norm 1:53,00), leichtathletik.de</li>
+      <li>World Athletics: Qualification System Beijing 2027 (800 m Männer: 1:43,00), worldathletics.org</li>
+      <li>European Athletics: Entry Standards EM Birmingham 2026 (800 m Männer: 1:44,80), european-athletics.com</li>
+      <li>World Athletics: Qualification System Olympische Spiele Paris 2024 (800 m Männer: 1:44,70), worldathletics.org</li>
     </ul>
-    <div class="hinweis">Abgerufen am 14.–16.10.2026.</div>
+    <div class="hinweis">Abgerufen am 14.–16.10.2026 und 26.10.2026.</div>
   </div>
 </section>
 
@@ -748,8 +723,8 @@ const slides=[...document.querySelectorAll('.slide')];
 const BLOCKS=[
   {t:'Einführung & Rahmen',r:'Oliver Majchrzak'},
   {t:'Ausgangslage & Ziel',r:'Jan Seemann'},
-  {t:'MAZ · MEZ · MIZ VP',r:'Jan Petermann'},
-  {t:'MIZ WK & Ernährung',r:'Guido Sander'}
+  {t:'MaZ · MeZ · MiZ VP',r:'Jan Petermann'},
+  {t:'MiZ WK & Ernährung',r:'Guido Sander'}
 ];
 const TOTAL=slides.length;
 
@@ -818,8 +793,12 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
   // Hauptkurve
   el(svg,'path',{d:smooth([[15,6.65],[16,6.97],[17,7.24],[18,7.43],[19,7.555],[20,7.665],[21,7.735],[22,7.775],[23,7.80],[24,7.81],[26,7.815],[28,7.825],[29.5,7.82]].map(p=>P(...p))),fill:'none',stroke:C.anth,'stroke-width':2.5});
   el(svg,'text',{x:ax(29.4),y:vy(7.82)+18,'font-size':12,'font-weight':700,fill:C.anth,'font-style':'italic'},'1:42,5');
-  // Normen
-  const N=[[20,106.8,'U23-EM','1:46,80'],[22,106.8,'U23-EM ⚠','1:46,80'],[23.2,104.8,'EM','1:44,80'],[25,104.7,'Olympia','1:44,70'],[27,104.8,'EM','1:44,80'],[24,103.0,'WM 1:43,00','',1],[26,103.0,'WM','',1],[28,103.0,'WM','',1]];
+  // Normlinien: U23-EM nur in den U23-Saisons 2026–2028, DM durchgehend
+  const hl=(a0,a1,t,txt)=>{const y=vy(v(t));el(svg,'line',{x1:ax(a0),x2:ax(a1),y1:y,y2:y,stroke:C.gold,'stroke-width':2,'stroke-dasharray':'2 3'});el(svg,'text',{x:ax(a1)+4,y:y+4,'font-size':11,'font-weight':600,fill:'#9a6f00'},txt);};
+  hl(18.6,21.4,107.5,'U23-EM 1:47,50');
+  hl(15,27,111.0,'DM 1:51,00');
+  // Normen (Saison = Alter + 2007: WM 2029, EM 2030, Olympia 2032 …)
+  const N=[[23,104.8,'EM','1:44,80'],[25,104.7,'Olympia','1:44,70'],[27,104.8,'EM','1:44,80'],[22,103.0,'WM','',1],[24,103.0,'WM','',1],[26,103.0,'WM 1:43,00','',1],[28,103.0,'WM','',1]];
   N.forEach(([a,t,n,z,side])=>{const [px,py]=P(a,v(t));el(svg,'rect',{x:px-5,y:py-5,width:10,height:10,fill:C.gold,stroke:'#fff','stroke-width':1.5,transform:`rotate(45 ${px} ${py})`});
     if(side){el(svg,'text',{x:px+9,y:py+4,'font-size':11,'font-weight':700,fill:'#9a6f00'},n);return;}
     el(svg,'text',{x:px,y:py+20,'text-anchor':'middle','font-size':11,'font-weight':600,fill:'#9a6f00'},n);el(svg,'text',{x:px,y:py+33,'text-anchor':'middle','font-size':11,fill:'#9a6f00'},z);});
@@ -827,7 +806,7 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
   [[15,120.01,'2:00,01',10,14],[16,115.61,'1:55,61',8,14],[17,111.95,'1:51,95',8,16],[18,106.67,'1:46,67',-8,-6,'end'],[19,105.90,'1:45,90',-6,-10,'end']].forEach(([a,t,l,dx,dy,an])=>{const [px,py]=P(a,v(t));
     el(svg,'circle',{cx:px,cy:py,r:5.5,fill:C.anth,stroke:'#fff','stroke-width':1.5});el(svg,'text',{x:px+dx,y:py+dy,'text-anchor':an||'start','font-size':12,'font-weight':700,fill:'#1F1C23'},l);});
   // Prognose-Punkte
-  [[20.1,104.3,'1:44,3',10,4],[21.2,103.5,'1:43,5',4,16],[23.2,102.6,'1:42,6',-4,-10],[24,102.5],[25,102.4],[26,102.43],[27,102.43],[28,102.36]].forEach(([a,t,l,dx,dy])=>{const [px,py]=P(a,v(t));
+  [[20.1,104.3,'1:44,3',10,4],[21.2,103.5,'1:43,5',6,26],[23.2,102.6,'1:42,6',-4,-10],[24,102.5],[25,102.4],[26,102.43],[27,102.43],[28,102.36]].forEach(([a,t,l,dx,dy])=>{const [px,py]=P(a,v(t));
     el(svg,'circle',{cx:px,cy:py,r:4.5,fill:'#fff',stroke:C.anth,'stroke-width':2});if(l)el(svg,'text',{x:px+dx,y:py+dy,'font-size':12,'font-weight':700,'font-style':'italic',fill:C.anth},l);});
   [[20.1,103.8,'1:43,8',-8,-6],[20.1,105.1,'1:45,1',8,14]].forEach(([a,t,l,dx,dy])=>{const [px,py]=P(a,v(t));el(svg,'circle',{cx:px,cy:py,r:5,fill:C.rot});
     el(svg,'text',{x:px+dx,y:py+dy,'text-anchor':dx<0?'end':'start','font-size':12,'font-weight':700,'font-style':'italic',fill:C.rot},l);});
@@ -847,9 +826,9 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
   el(svg,'line',{x1:c1x+46,y1:c1y+6,x2:ax(21.3),y2:c1y+22,stroke:C.rot,'stroke-width':1.5});
   el(svg,'text',{x:ax(21.4),y:c1y+16,'font-size':12,'font-weight':700,fill:C.rot},'Umfangsteigerung 78 → 90 km/Wo. (ca. +15 %)');
   el(svg,'text',{x:ax(21.4),y:c1y+31,'font-size':12,fill:C.rot},'Überdistanztyp');
-  /* ---- Altersachse ---- */
-  for(let a=15;a<=30;a++){el(svg,'text',{x:ax(a),y:B2+18,'text-anchor':'middle','font-size':11,fill:C.grau},a);}
-  el(svg,'text',{x:R,y:B2+34,'text-anchor':'end','font-size':12,fill:C.grau},'Alter');
+  /* ---- Saisonachse (Daten nach Lebensalter der Originalgrafik: Saison = Alter + 2007) ---- */
+  for(let a=15;a<=30;a++){el(svg,'text',{x:ax(a),y:B2+18,'text-anchor':'middle','font-size':11,fill:C.grau},a+2007);}
+  el(svg,'text',{x:R,y:B2+34,'text-anchor':'end','font-size':12,fill:C.grau},'Saison');
   /* ---- Legende ---- */
   const lg=[['line',C.anth,'','800 m Ist / Prognose'],['line',C.gold,'','optimistisch'],['line',C.rot,'6 4','konservativ'],['dia',C.gold,'','Quali-Normen'],['line','#8c8692','','Vl3']];
   let lx=L;lg.forEach(([k,c,da,t])=>{if(k==='line')el(svg,'line',{x1:lx,x2:lx+22,y1:494,y2:494,stroke:c,'stroke-width':2.5,'stroke-dasharray':da});else el(svg,'rect',{x:lx+6,y:489,width:9,height:9,fill:c,transform:`rotate(45 ${lx+10.5} 493.5)`});
@@ -885,9 +864,9 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
   const L=50,R=430,T=24,B=210,x=a=>L+(a-15)/(24-15)*(R-L),y=s=>T+(s-165)/(225-165)*(B-T);
   const f=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
   [170,180,190,200,210,220].forEach(s=>{el(svg,'line',{x1:L,x2:R,y1:y(s),y2:y(s),stroke:C.linie});el(svg,'text',{x:L-6,y:y(s)+4,'text-anchor':'end','font-size':11,fill:C.grau},f(s));});
-  [15,16,18,20,22,24].forEach(a=>el(svg,'text',{x:x(a),y:B+18,'text-anchor':'middle','font-size':11,fill:C.grau},a));
+  [15,16,18,20,22,24].forEach(a=>el(svg,'text',{x:x(a),y:B+18,'text-anchor':'middle','font-size':11,fill:C.grau},a+2007));
   el(svg,'text',{x:L,y:12,'font-size':12,'font-weight':600,fill:'#1F1C23'},'Vl3 in min/km (schneller = oben)');
-  el(svg,'text',{x:R,y:B+36,'text-anchor':'end','font-size':11,fill:C.grau},'Alter');
+  el(svg,'text',{x:R,y:B+36,'text-anchor':'end','font-size':11,fill:C.grau},'Saison');
   el(svg,'polyline',{points:d.filter(p=>!p[2]||p[0]===20&&false).map(p=>x(p[0])+','+y(p[1])).join(' '),fill:'none',stroke:C.anth,'stroke-width':2.5});
   el(svg,'polyline',{points:d.slice(3).map(p=>x(p[0])+','+y(p[1])).join(' '),fill:'none',stroke:C.rot,'stroke-width':2.5,'stroke-dasharray':'7 5'});
   d.forEach(([a,s,pr])=>{el(svg,'circle',{cx:x(a),cy:y(s),r:5,fill:pr?C.rot:C.anth});el(svg,'text',{x:x(a)+(a===15?10:0),y:y(s)-10,'text-anchor':a===15?'start':'middle','font-size':12,'font-weight':600,fill:'#1F1C23'},f(s));});
@@ -896,16 +875,15 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
 /* Saisonhöhepunkte Juli/Aug 2027 */
 (function(){
   const svg=document.getElementById('chartHoehe');if(!svg)return;
-  const d0=new Date(2027,5,28),d1=new Date(2027,7,22),W=1180,L=20,R=1160;
+  const d0=new Date(2027,5,28),d1=new Date(2027,7,8),W=1180,L=20,R=1160;
   const x=d=>L+(d-d0)/(d1-d0)*(R-L);
   el(svg,'line',{x1:L,x2:R,y1:70,y2:70,stroke:C.linie,'stroke-width':6});
   for(let d=new Date(d0);d<=d1;d.setDate(d.getDate()+7)){el(svg,'line',{x1:x(d),x2:x(d),y1:62,y2:78,stroke:'#C9C3CE'});el(svg,'text',{x:x(d),y:96,'text-anchor':'middle','font-size':11,fill:C.grau},d.getDate()+'.'+(d.getMonth()+1)+'.');}
-  const ev=[['DM U23',new Date(2027,6,9),new Date(2027,6,11),C.anth],['U23-EM Bydgoszcz',new Date(2027,6,22),new Date(2027,6,25),C.rot],['FISU Chungju',new Date(2027,7,7),new Date(2027,7,12),C.rot]];
+  const ev=[['DM U23',new Date(2027,6,9),new Date(2027,6,11),C.anth],['U23-EM Bydgoszcz',new Date(2027,6,22),new Date(2027,6,25),C.rot]];
   ev.forEach(([t,a,b,c])=>{el(svg,'rect',{x:x(a),y:56,width:Math.max(8,x(b)-x(a)),height:28,rx:4,fill:c});el(svg,'text',{x:(x(a)+x(b))/2,y:44,'text-anchor':'middle','font-size':15,'font-weight':700,fill:c===C.rot?C.rot:'#1F1C23'},t);});
   const dm=[new Date(2027,6,30),new Date(2027,7,1)];
-  el(svg,'rect',{x:x(dm[0]),y:60,width:x(dm[1])-x(dm[0]),height:20,rx:3,fill:'none',stroke:'#9a94a0','stroke-dasharray':'4 3'});
-  el(svg,'text',{x:(x(dm[0])+x(dm[1]))/2,y:122,'text-anchor':'middle','font-size':12,fill:'#9a94a0'},'DM Männer – entfällt');
-  el(svg,'text',{x:(x(new Date(2027,6,25))+x(new Date(2027,7,7)))/2,y:140,'text-anchor':'middle','font-size':12,'font-weight':600,fill:C.anth},'ca. 2 Wochen: Regeneration + Anreise');
+  el(svg,'rect',{x:x(dm[0]),y:60,width:x(dm[1])-x(dm[0]),height:20,rx:3,fill:'none',stroke:C.anth,'stroke-width':1.5,'stroke-dasharray':'4 3'});
+  el(svg,'text',{x:(x(dm[0])+x(dm[1]))/2,y:44,'text-anchor':'middle','font-size':15,'font-weight':700,fill:'#1F1C23'},'DM Männer (Option)');
 })();
 
 /* Jahresplan (Index 0 = KW 42/2026; 2026 hat 53 KW) */
@@ -914,7 +892,7 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
   const W=1180,L=10,N=51,cw=(W-L-10)/N;
   const idx=(kw,j)=>j===2026?kw-42:11+kw;
   const x=i=>L+i*cw;
-  const per=[['VP I',0,9,C.anth],['VP II',10,13,'#5b5463'],['WP I',14,20,C.rot],['VP III',21,29,'#5b5463'],['WP II',30,43,C.rot],['ÜP',44,50,'#9a94a0']];
+  const per=[['VP I',0,7,C.anth],['VP II',8,13,'#5b5463'],['WP I',14,20,C.rot],['VP III',21,29,'#5b5463'],['WP II',30,41,C.rot],['ÜP',42,50,'#9a94a0']];
   per.forEach(([t,a,b,c])=>{el(svg,'rect',{x:x(a),y:70,width:(b-a+1)*cw-2,height:46,fill:c,rx:3});el(svg,'text',{x:x(a)+(b-a+1)*cw/2,y:99,'text-anchor':'middle',fill:'#fff','font-size':16,'font-weight':700},t);});
   el(svg,'rect',{x:x(21),y:70,width:2*cw-2,height:46,fill:'#9a94a0',rx:3});el(svg,'text',{x:x(22),y:99,'text-anchor':'middle',fill:'#fff','font-size':12,'font-weight':700},'ÜP');
   // KW-Achse
@@ -926,10 +904,10 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
   el(svg,'text',{x:x(0),y:24,'font-size':13,'font-weight':700,fill:'#1F1C23'},'2026');el(svg,'text',{x:x(12),y:24,'font-size':13,'font-weight':700,fill:'#1F1C23'},'2027');
   el(svg,'line',{x1:x(12),x2:x(12),y1:30,y2:320,stroke:C.linie,'stroke-width':2});
   // Trainingslager
-  [['TL Weihn.',10,11,0],['TL Portugal ⚠',12,13,1],['TL Ostern ⚠',22,24,0]].forEach(([t,a,b,r])=>{el(svg,'rect',{x:x(a),y:166+r*26,width:(b-a+1)*cw-2,height:22,fill:C.gold,rx:3});el(svg,'text',{x:x(a)+3,y:182+r*26,'font-size':11,'font-weight':600,fill:'#1F1C23'},t);});
+  [['TL Weihn.',10,11,0],['TL Portugal',12,13,1],['TL Ostern',22,24,0]].forEach(([t,a,b,r])=>{el(svg,'rect',{x:x(a),y:166+r*26,width:(b-a+1)*cw-2,height:22,fill:C.gold,rx:3});el(svg,'text',{x:x(a)+3,y:182+r*26,'font-size':11,'font-weight':600,fill:'#1F1C23'},t);});
   el(svg,'text',{x:L,y:186,'font-size':11,fill:C.grau},'');
   // Wettkämpfe
-  const wk=[['LM H',3,0],['NDM H',5,1],['DM H',7,0],['EM H*',9,1],['Zeven',19,0],['Dresden',21,1],['DHM',22,0],['NDM',24,1],['DM U23',27,0],['U23-EM',29,2],['FISU',32,2]];
+  const wk=[['LM H',3,0],['NDM H',5,1],['DM H',7,0],['EM H*',9,1],['Zeven',19,0],['Dresden',21,1],['NDM',24,1],['DM U23',27,0],['U23-EM',29,2],['DM*',30,1]];
   wk.forEach(([t,kw,lv])=>{const i=11+kw,cxp=x(i)+cw/2,yy=232+lv*30;const haupt=lv===2;
     el(svg,'line',{x1:cxp,x2:cxp,y1:116,y2:yy-10,stroke:haupt?C.rot:C.linie,'stroke-width':haupt?2.5:1.5});
     el(svg,'path',{d:`M${cxp} ${yy-9} L${cxp+8} ${yy} L${cxp} ${yy+9} L${cxp-8} ${yy}Z`,fill:haupt?C.rot:C.anth});
@@ -941,7 +919,7 @@ const fmt=s=>{const m=Math.floor(s/60),r=(s-m*60).toFixed(2).replace('.',',');re
 (function(){
   const svg=document.getElementById('chartMeso');
   const kw=['42','43','44','45','46','47','48','49','50','51','52','53','1','2'];
-  const km=[72,76,80,64,78,84,88,70,85,90,90,68,85,80];
+  const km=[72,76,80,70,77,84,88,72,79,86,90,74,81,85]; // max. +10 % zur Vorwoche
   const meso=[0,0,0,0,1,1,1,1,2,2,2,2,3,3];
   const col=[C.anth,C.gold,C.rot,'#5b5463'];
   const W=1180,L=50,B=40,H=300,T=20,bw=(W-L-20)/kw.length;
